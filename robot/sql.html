@@ -44,8 +44,9 @@ if("undefined" == typeof info){
 try
   {
   //在这里运行代码
-  
-    document.getElementsByTagName('qssq')[0].innerHTML=""+decodeURIComponent(info);
+     document.getElementsByTagName('qssq')[0].innerHTML=""+decodeURI(info);
+    //document.getElementsByTagName('qssq')[0].innerHTML=""+decodeURIComponent(info);
+	//decodeURI   decodeURIComponent
   }
 catch(err)
   {
