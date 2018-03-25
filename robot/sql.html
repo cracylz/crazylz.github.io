@@ -14,11 +14,11 @@ function changeLink(){
 
 </script>
 </head>
-<body>
- 
+<body align="center" style="margin-top:50px">
+ <qssq>
 <a id="myAnchor" href="//www.microsoft.com">xxxxxxxx</a>
 <input type="button" onclick="changeLink()" value="修改链接">
- 
+ </qssq>
 </body>
 <script>
     function getRequest() {
@@ -37,10 +37,10 @@ function changeLink(){
 }
 var info= getRequest().info;
 if("undefined" == typeof info){
-    alert("这是情迁QQ机器人数据集查询网址,你是不可以直接打开我的哈!");
-  document.getElementsByTagName('html')[0].innerHTML="qq:694886526";
+   // alert("这是情迁QQ机器人数据集查询网址,你是不可以直接打开我的哈!");
+ document.getElementsByTagName('qssq')[0].innerHTML="qq:694886526";
 }else{
-   document.getElementsByTagName('html')[0].innerHTML=""+info;
+   document.getElementsByTagName('qssq')[0].innerHTML=""+decodeURIComponent(info);
 }
 
 </script>
