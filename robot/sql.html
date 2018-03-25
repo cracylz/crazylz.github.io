@@ -40,7 +40,19 @@ if("undefined" == typeof info){
    // alert("这是情迁QQ机器人数据集查询网址,你是不可以直接打开我的哈!");
  document.getElementsByTagName('qssq')[0].innerHTML="qq:694886526";
 }else{
-   document.getElementsByTagName('qssq')[0].innerHTML=""+decodeURIComponent(info);
+
+try
+  {
+  //在这里运行代码
+  
+    document.getElementsByTagName('qssq')[0].innerHTML=""+decodeURIComponent(info);
+  }
+catch(err)
+  {
+  //在这里处理错误
+    document.getElementsByTagName('qssq')[0].innerHTML=""+info;
+  }
+ 
 }
 
 </script>
