@@ -71,8 +71,8 @@ try
   {
   
   
-			var	decryptResult=decryptByDES(info,"qssq666.cn_luozheng");
-    document.getElementsByTagName('qssq')[0].innerHTML=decryptResult+"<br/>"+decodeURIComponent(decryptResult);
+			var	decryptResult=decryptByDES(decodeURIComponent(info),"qssq666.cn_luozheng");
+    document.getElementsByTagName('qssq')[0].innerHTML=decryptResult+"";
   //file:///F:/src/git_project/website3/hexo/source/robot/sql.html?info=
  // %3Ctable%3E%3Ccaption%3E%E6%83%85%E8%BF%81QQ%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9F%A5%E8%AF%A2%3C%2Fcaption%3E%3Ctr%3E%3Cth%3Eaccount%3Cth%3E%3C%2Ftr%3E%3C%2Ftd%3E%3C%2Ftd%3E%3C%2Ftd%3E%3C%2Ftd%3E%3C%2Ftd%3E%3Cbr%2F%3E%0A%3C%2Ftr%3E%3Ctd%3E226573967%3C%2Ftr%3E%0A%3Cbr%2F%3E%3C%2Ftr%3E%3Ctd%3E618725848%3C%2Ftr%3E%0A%3Cbr%2F%3E%3C%2Ftr%3E%3Ctd%3E129103467%3C%2Ftr%3E%0A%3Cbr%2F%3E%3C%2Ftr%3E%3Ctd%3E474240677%3C%2Ftr%3E%0A%3Cbr%2F%3E%3C%2Ftr%3E%3Ctd%3E225832175%3C%2Ftr%3E%0A%3Cbr%2F%3E%3C%2Ftable%3E
   
@@ -84,7 +84,7 @@ try
   }
 catch(err)
   {
- document.getElementsByTagName('qssq')[0].innerHTML="无法解密数据!";
+ document.getElementsByTagName('qssq')[0].innerHTML=decodeURI(info)+"无法解密数据!";
   //在这里处理错误
    // document.getElementsByTagName('qssq')[0].innerHTML=""+info;
   }
