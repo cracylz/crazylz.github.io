@@ -1,0 +1,74 @@
+﻿{
+  "result_code":0,
+  "result_msg":"破解成功",
+  "user_no":"111",
+"five_flag":"1,1,1,1",
+"five_config":"1,1,1,1,1#1,1,1,1,1#1,1,1,1,1#1,1,1,1,1",
+
+  "six_flag":"1,1,1,1",
+  "six_config":"1,1,1,1,1,1#1,1,1,1,1,1#1,1,1,1,1,1#1,1,1,1,1,1",
+
+
+  "seven_flag":"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1",
+  "seven_config":"0,0,0,0,0,0,0#0,0,0,0,0,0,0#0,0,0,0,0,0,0,0#0,0,0,0,0,0,0#0,0,0,0,0,0#0,0,0,0,0#0,0,0,0#0,0#0,0,0,0,0",
+
+
+  "eight_flag":"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1",
+  "eight_config":"0,0,0,0,0,0,0,0#0,0,0,0,0,0,0#0,0,0,0,0,0,0,0#0,0,0,0,0,0,0#0,0,0,0,0,0#0,0,0,0,0#0,0,0,0#0,0#0,0,0,0,0",
+
+
+
+  "zfwin_flag":"1",
+  "zfwin_config":"1,1,1,1,1#1,1,1,1,1#1,1,1,1,1#1,1,1,1,1",
+
+
+  "nine_flag":"1,1,1,1",
+  "nine_config":"1,1,1,1,1#1,1,1,1,1#1,1,1,1,1#1,1,1,1,1",
+
+  "dxds_flag":"1",
+  "dxds_config":"",
+
+
+
+
+"user_token":"user_token",
+"mobao_num":"mobao_num",
+"fee_scope":"1,5",
+"qq_lite_nick":"qq_lite_nick",
+"qq_lite_num":"qq_lite_num",
+"qq_lite_port":"qq_lite_port",
+"user_guanggao":"qssqserver",
+"guanggao":"guanggao",
+  "server_version":-5,
+  "update_show_msg":"无需更新的呢",
+"admin_all":"admin_all",
+
+"fuli":"fuli",
+"tuo_num":"tuo_num",
+"call_flag":"call_flag",
+"zhuanfa_num":"10",
+"zhuanfa_qq":"694886526",
+"error_flag":"error_flag",
+"tren_flag":"tren_flag",
+"play_zf_winflag":"zfwin_flag",
+"msg_pp":"msg_pp",
+"vip_qq": "37175656",
+"end_time":"永久破解",
+"qq_group":"630378724",
+"msg_config_luck_dan":"msg_config_luck_dan",
+"msg_config_luck_duo":"msg_config_luck_duo",
+"msg_config_luck_zuhe":"msg_config_luck_zuhe",
+"msg_config_luck_dxds":"msg_config_luck_dxds",
+"msg_config_luck_fan":"msg_config_luck_fan",
+"msg_config_zf_dan_0":"msg_config_zf_dan_0",
+"msg_config_zf_dan_1":"msg_config_zf_dan_1",
+"msg_config_zf_duo_0":"msg_config_zf_duo_0",
+"msg_config_zf_duo_1":"msg_config_zf_duo_1",
+"msg_config_zf_zuhe_0":"msg_config_zf_zuhe_0",
+"msg_config_zf_zuhe_1":"msg_config_zf_zuhe_1",
+"msg_config_zf_dxds_0":"msg_config_zf_dxds_0",
+"msg_config_zf_dxds_1":"msg_config_zf_dxds_1",
+"msg_config_zf_fan_0":"msg_config_zf_fan_0",
+"msg_config_zf_fan_1":"msg_config_zf_fan_1"
+
+}
