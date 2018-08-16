@@ -61,21 +61,30 @@ function changeLink(){
   }
   return theRequest;
 }
+var encryptData= getRequest().encryptData;
 var info= getRequest().info;
-if("undefined" == typeof info){
+console.log(window.document.location.pathname);
+if("undefined" != typeof encryptData){
+	//alert("test:"+encryptData);
+	console.log("加密的数据",unescape(encryptData));//qssq666
+	var	decryptResult=encryptByDES(unescape(encryptData),"qssq666.cn_luozheng");//在线url编码需要把加号去掉。
+
+ document.getElementsByTagName('qssq')[0].innerHTML="加密结果:</br>"+decryptResult+"</br><a href=\""+window.document.location.pathname+"?info="+decryptResult+"\">预览</a>";
+}else if("undefined" == typeof info){
    // alert("这是情迁QQ机器人数据集查询网址,你是不可以直接打开我的哈!");
  document.getElementsByTagName('qssq')[0].innerHTML="qq:694886526";
 }else{
 
 try
   {
+  		var	decryptResult=decryptByDES(decodeURIComponent(info),"qssq666.cn_luozheng");
+		console.log("解密结果",decryptResult);
   
-  
-			var	decryptResult=decryptByDES(decodeURIComponent(info),"qssq666.cn_luozheng");
+			//var	decryptResult=decryptByDES(decodeURIComponent(info),"qssq666.cn_luozheng");
     document.getElementsByTagName('qssq')[0].innerHTML=decryptResult+"";
   //file:///F:/src/git_project/website3/hexo/source/robot/sql.html?info=
  // %3Ctable%3E%3Ccaption%3E%E6%83%85%E8%BF%81QQ%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9F%A5%E8%AF%A2%3C%2Fcaption%3E%3Ctr%3E%3Cth%3Eaccount%3Cth%3E%3C%2Ftr%3E%3C%2Ftd%3E%3C%2Ftd%3E%3C%2Ftd%3E%3C%2Ftd%3E%3C%2Ftd%3E%3Cbr%2F%3E%0A%3C%2Ftr%3E%3Ctd%3E226573967%3C%2Ftr%3E%0A%3Cbr%2F%3E%3C%2Ftr%3E%3Ctd%3E618725848%3C%2Ftr%3E%0A%3Cbr%2F%3E%3C%2Ftr%3E%3Ctd%3E129103467%3C%2Ftr%3E%0A%3Cbr%2F%3E%3C%2Ftr%3E%3Ctd%3E474240677%3C%2Ftr%3E%0A%3Cbr%2F%3E%3C%2Ftr%3E%3Ctd%3E225832175%3C%2Ftr%3E%0A%3Cbr%2F%3E%3C%2Ftable%3E
-  
+  //情迁QQ机器人 sql执行结果查询
   //在这里运行代码
    //  document.getElementsByTagName('qssq')[0].innerHTML=""+decodeURI(info);
   //document.getElementsByTagName('qssq')[0].innerHTML=""+decodeURIComponent(info);
@@ -84,6 +93,7 @@ try
   }
 catch(err)
   {
+console.log(err);
  document.getElementsByTagName('qssq')[0].innerHTML=decodeURI(info)+"无法解密数据!";
   //在这里处理错误
    // document.getElementsByTagName('qssq')[0].innerHTML=""+info;
