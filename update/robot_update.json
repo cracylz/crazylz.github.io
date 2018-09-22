@@ -1,1 +1,1 @@
-{"version":"1.7.0","versioncode":"44","force":"false","url":"http://qssq.ys168.com","url1":"http://dl-xda.xposed.info/modules/cn.qssq666.robot_v23_94ae8d.apk","group":"1Eg7AKtjSt989YCYi3zGxj4eFugVO8IQ","description":"插件sdk管理功能兼容调整，需要升级最新版情迁插件，否则启用插件化加载将会崩溃，修复群私聊死循环问题，修复，数据库目录、插件目录移动到/sdcard目录方便用户手动管理。方便插件化修改更便捷。"}
+{"version":"1.8.4","versioncode":"62","force":"false","url":"http://qssq666.cn/update","url1":"https://dl-xda.xposed.info/modules/cn.qssq666.robot_v62_eb05c7.apk","group":"1Eg7AKtjSt989YCYi3zGxj4eFugVO8IQ","description":"增加点赞、禁言、修改群名片等功能。需要下载Q++1.0.9以上版本。"}
