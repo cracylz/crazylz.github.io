@@ -254,13 +254,6 @@
   </url>
   
   <url>
-    <loc>http://www.qssq666.cn/live/chat_room.json</loc>
-    
-    <lastmod>2017-04-23T13:57:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.qssq666.cn/live/chat_group.json</loc>
     
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
@@ -268,14 +261,7 @@
   </url>
   
   <url>
-    <loc>http://www.qssq666.cn/live/share.html</loc>
-    
-    <lastmod>2017-04-23T13:57:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.qssq666.cn/messagebroad/index.html</loc>
+    <loc>http://www.qssq666.cn/live/chat_room.json</loc>
     
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
     
@@ -290,6 +276,20 @@
   
   <url>
     <loc>http://www.qssq666.cn/other/history_qq.html</loc>
+    
+    <lastmod>2017-04-23T13:57:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.qssq666.cn/live/share.html</loc>
+    
+    <lastmod>2017-04-23T13:57:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.qssq666.cn/messagebroad/index.html</loc>
     
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
     
