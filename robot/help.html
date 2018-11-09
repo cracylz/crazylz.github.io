@@ -1,21 +1,58 @@
-extends partial/layout
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="baidu-site-verification" content="1EB8XoOl0C"><meta name="google-site-verification" content="K7thEgdLm0UfRWJ5MGdF7sCcjClSzAlxFLPv2Oz5CGM"><title>  · 情迁美好时光追忆</title><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content=" - 情随事迁"><meta name="keywords"><meta name="author" content="情随事迁"><link rel="short icon" href="/images/favicon.ico"><link rel="stylesheet" href="/css/bubuzou.css"><link rel="search" type="application/opensearchdescription+xml" href="http://www.qssq666.cn/atom.xml" title="情迁美好时光追忆"></head><body><header><div class="header row"> <a href="/" class="logo-link"><img src="/images/logo.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" data-hover="博文" class="nav-list-link">博文</a></li><li class="nav-list-item"><a href="/archives/" target="_self" data-hover="归档" class="nav-list-link">归档</a></li><li class="nav-list-item"><a href="/categories/live/" target="_self" data-hover="生活" class="nav-list-link">生活</a></li><li class="nav-list-item"><a href="/categories/film/" target="_self" data-hover="摄影" class="nav-list-link">摄影</a></li><li class="nav-list-item"><a href="/about/" target="_self" data-hover="关于" class="nav-list-link">关于</a></li></ul><div class="search"><a id="search_btn" href="#search"></a></div></div></header><div class="row scroll-con"><section class="container"><!-- for archive page--><div id="postAr" class="post"><article class="post-block"><h1 class="post-title"></h1><div class="post-info">2018-11-09<p class="visit"><i data-hk-page="current">-</i><span>次访问</span></p></div><div class="post-content"><!DOCTYPE html> 
+<html lang="en"> 
+<head>
+ <meta charset="UTF-8">
+ <title>机器人SDK使用帮助</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+ <meta name="apple-mobile-web-app-capable" content="yes">
+ <meta name="apple-hlkq" content="yes">
+ <meta name="apple-mobile-web-app-status-bar-style" content="black">
+ <style> html,body,ul,ol,li,form,fieldset,legend{margin:0;padding:5px;}h1,h2,h3,h4,h5,h6,p{margin:0}
+ body{height:auto;overflow:auto;background-color:#f2f2f2; color:#676767;
+ font-family:Microsoft Yahei,Arial,Helvetica,sans-serif}
+ .container{
+ max-width: 640px;max-height:1138px;min-height:569px; margin:0 auto;} 
+ p{font-size:12px; line-height:300%;} 
+ 
+ </style> 
+ 
+ </head>
 
-block site_title
-    != page.title + " · " + config.title
+ <body> 
+  <div class="container">
 
-block description
-    - var desc = page.desc || page.title + ' - ' + config.author;
-    meta(name="description", content=desc)
+ 
+ <h3>插件安装姿势</h3>
+<p>1.可以直接点击安装插件然后选择下载的文件(通常后缀是.apk或者.jar或者是.dex)进行安装</p>
+<p>2.如果你是root机你也可以手动移动插件到/data/data/cn.qssq666.robot/app_plugins/文件夹下</p>
+<p>3.通常如果是apk方式的apk可以直接主动安装到此目录,但是可能需要root权限</p>
 
-block container
-    include mixins/post
-    +post(page)
+<h3>到哪里下载机器人插件</h3>
+<p><a href="http://qssq.ys168.com" target="_blank" rel="external">永硕网盘</a> <a href="http://qssq666.cn/update" target="_blank" rel="external">所有软件升级入口</a>  可以找到蛛丝马迹
+</p> 
+<p> 目前2018-3-18 14:08:43为止只开发了一个插件,各位别找了,第三方开发者想开发的话自己开发好了,目前机器人的功能基本上可以满足需求了,特别是用于管理群.
+目前作者本人就开发了一个不在本群成员就自动禁言的插件,在永硕网盘提供下载了,目前群管功能是内置嵌入的，</p>
 
-block pagination
-    include mixins/paginator
-    +post()
-    include partial/comment
 
-block copyright
-    include partial/copyright
+<h3>第三方开发者开发sdk帮助</h3>
+<p> 如果你会java那么就可以开发机器人插件.因为sdk本身不需要生成一个apk.直接引入我提供的sdk工具包即可,</p>
+<p> sdk工具包在永硕网盘下载,你可以用来开发定时闹钟,卡片消息(禁止发送诈骗卡片消息,这样人神共愤,这个卡片也只能会腾讯被早早和谐)</p>
 
+ <h3>机器人都不会用????</h3>
+<p>1到上面的永硕网盘下载txt文档,以后我可能会更新视频教程,会的朋友也可以录制视频给我,我好公布出来。或者加群226573967体验机器人,通常作者群里的机器人是最新版的,有没有bug,好不好用大家都可以体验.</p>
+ <h3>想要得到更多帮助</h3>
+<p>软件是免费的,但是每一个人都不是傻逼,还是渴望得到打赏的,打赏了的朋友我会特别给你回复帮你解决你遇到的问题,注意,有问题注意消息描述,是否是按照文档一步一步来,问题出在哪一步,不然你直接说你不会用我也很难帮你,通常学会如何描述表达自己遇到的问题的人更能快速得到解决!这也是学会做人的道理,</p>
+要打赏的朋友建议QQ打赏,qq:694886526
+ <p align="right">情随事迁编辑于2018-3-18 14:12:00</p>
+ </div> 
+
+ </body>
+ </html>
+
+
+</div></article></div><div class="right-container"><div class="widget"><div class="category"><h4>分类归档</h4><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Blog/">Blog</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Photo/">Photo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/QQ技巧/">QQ技巧</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Xposed插件/">Xposed插件</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Xposed插件/抢红包软件/">抢红包软件</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Xposed插件/抢红包软件/机器人宿主/">机器人宿主</a><span class="category-list-count">1</span></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/地球/">地球</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/地球/中国/">中国</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/地球/中国/湖南/">湖南</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/地球/中国/湖南/娄底/">娄底</a><span class="category-list-count">1</span></li></ul></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/测试/">测试</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/版本控制/">版本控制</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/科幻/">科幻</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/网站建设/">网站建设</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/美女/">美女</a><span class="category-list-count">1</span></li></ul></div></div><div class="widget"><div class="tagcloud"><h4>标签云</h4><a href="/tags/CDN/" style="font-size: 10px;">CDN</a> <a href="/tags/Git/" style="font-size: 20px;">Git</a> <a href="/tags/JAVA/" style="font-size: 10px;">JAVA</a> <a href="/tags/QQ技巧/" style="font-size: 10px;">QQ技巧</a> <a href="/tags/WEB/" style="font-size: 20px;">WEB</a> <a href="/tags/android-studio/" style="font-size: 10px;">android studio</a> <a href="/tags/consectetur/" style="font-size: 10px;">consectetur</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/七牛/" style="font-size: 10px;">七牛</a> <a href="/tags/代码编写/" style="font-size: 10px;">代码编写</a> <a href="/tags/图片/" style="font-size: 10px;">图片</a> <a href="/tags/测试/" style="font-size: 10px;">测试</a> <a href="/tags/版本控制/" style="font-size: 20px;">版本控制</a> <a href="/tags/科幻/" style="font-size: 10px;">科幻</a> <a href="/tags/视频/" style="font-size: 10px;">视频</a> <a href="/tags/链接/" style="font-size: 10px;">链接</a></div></div><div class="widget"><div class="recent"><h4>最近文章</h4><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/11/09/了解Q++/">什么是Q++ 什么是内置？什么是 情迁红包，如何使用q++,如何下载更新</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/01/新动态/">转眼又一年</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/01/情迁产品下载地址/">情迁产品下载地址</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/01/hello-world与hexo的开始/">Hello World</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/06/欢迎下载-我开发的安卓APP情迁系统工具箱/">情迁系统工具箱截图</a></li></ul></div></div><div class="widget"><div id="arAnchorBar"></div></div></div></section></div><div class="right-menu"></div><div class="modal search-modal"><div class="input-field"><input type="text" id="search_input"><label for="search-input">搜索</label></div><div id="search_result" class="search-result"></div></div><div class="blog-overlay"></div><footer class="row"><div class="footer-con"><div class="paginator"></div><!--PC和WAP自适应版--><div id="SOHUCS" sid="robot/help.html"> </div><script>(function() {
+    var appid = 'cyt6h19Ve'; 
+    var conf = 'prod_0b4b95efa2ecfede2ddfb5adcef8c394'; 
+    var width = window.innerWidth || document.documentElement.clientWidth; 
+    if (width < 960) { 
+    window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })();</script><div class="copyright"><p>© 2016 - 2018 <a target="_blank">情随事迁</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> <br> and <a href="https://github.com/Bulandent/hexo-theme-bubuzou" target="_blank">hexo-theme-bubuzou</a></p><p>闽ICP备16007301号-2</p></div><div class="totop"><i></i></div></div></footer><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><script src="http://apps.bdimg.com/libs/jquery/1.8.2/jquery.min.js"></script><script src="https://cdn1.lncld.net/static/js/av-mini-0.6.10.js"></script><script src="/scripts/hit-kounter-lc-0.2.0.js"></script><script src="/scripts/arAnchor.js"></script><script src="/scripts/main.js"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script></body></html>

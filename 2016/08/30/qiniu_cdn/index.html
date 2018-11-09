@@ -1,21 +1,98 @@
-extends partial/layout
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="baidu-site-verification" content="1EB8XoOl0C"><meta name="google-site-verification" content="K7thEgdLm0UfRWJ5MGdF7sCcjClSzAlxFLPv2Oz5CGM"><title> 教你为网站空间减压节省空间提升浏览速度即转移资源文件到七牛云 · 情迁美好时光追忆</title><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="教你为网站空间减压节省空间提升浏览速度即转移资源文件到七牛云 - 情随事迁"><meta name="keywords"><meta name="author" content="情随事迁"><link rel="short icon" href="/images/favicon.ico"><link rel="stylesheet" href="/css/bubuzou.css"><link rel="search" type="application/opensearchdescription+xml" href="http://www.qssq666.cn/atom.xml" title="情迁美好时光追忆"></head><body><header><div class="header row"> <a href="/" class="logo-link"><img src="/images/logo.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" data-hover="博文" class="nav-list-link">博文</a></li><li class="nav-list-item"><a href="/archives/" target="_self" data-hover="归档" class="nav-list-link">归档</a></li><li class="nav-list-item"><a href="/categories/live/" target="_self" data-hover="生活" class="nav-list-link">生活</a></li><li class="nav-list-item"><a href="/categories/film/" target="_self" data-hover="摄影" class="nav-list-link">摄影</a></li><li class="nav-list-item"><a href="/about/" target="_self" data-hover="关于" class="nav-list-link">关于</a></li></ul><div class="search"><a id="search_btn" href="#search"></a></div></div></header><div class="row scroll-con"><section class="container"><!-- for archive page--><div id="postAr" class="post"><article class="post-block"><h1 class="post-title">教你为网站空间减压节省空间提升浏览速度即转移资源文件到七牛云</h1><div class="post-info">2016-08-30<p class="visit"><i data-hk-page="current">-</i><span>次访问</span></p></div><div class="post-content"><p>手把手带你装逼带你飞深夜教程 之 教你为网站空间减压节省空间提升浏览速度即转移资源文件到七牛云</p>
+<a id="more"></a>
+<h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><h4 id="这是做什么鬼"><a href="#这是做什么鬼" class="headerlink" title="这是做什么鬼?"></a>这是做什么鬼?</h4><blockquote>
+<p>通俗的讲 就是  把资源文件/图片等大文件非网页文件,单独弄一个地方存储,那么免费云 给你存文件你用不用?<br>  哈,当然用了,也就是需要图片和文件的时候引用的是另外一个网站空间,不过我这里是云存储了,高大上一点了.</p>
+<h4 id="教程环境"><a href="#教程环境" class="headerlink" title="教程环境"></a>教程环境</h4><p>  win764位操作系统 </p>
+</blockquote>
+<h4 id="Content-Delivery-Network"><a href="#Content-Delivery-Network" class="headerlink" title="Content Delivery Network"></a>Content Delivery Network</h4><p>CDN的全称是Content Delivery Network，即内容分发网络。其基本思路是尽可能避开互联网上有可能影响数据传输速度和稳定性的瓶颈和环节，使内容传输的更快、更稳定。通过在网络各处放置节点服务器所构成的在现有的互联网基础之上的一层智能虚拟网络，CDN系统能够实时地根据网络流量和各节点的连接、负载状况以及到用户的距离和响应时间等综合信息将用户的请求重新导向离用户最近的服务节点上。其目的是使用户可就近取得所需内容，解决 Internet网络拥挤的状况，提高用户访问网站的响应速度。</p>
+<h3 id="开始使用"><a href="#开始使用" class="headerlink" title="开始使用"></a>开始使用</h3><h4 id="注册七牛云与创建空间"><a href="#注册七牛云与创建空间" class="headerlink" title="注册七牛云与创建空间"></a>注册七牛云与创建空间</h4><ul>
+<li>首先<a href="https://portal.qiniu.com/signup?code=3lhd0ep0xhkcy" target="_blank" rel="external">注册七牛账号</a>注册很简单,但是你得有身份证,手机才行啊,需要验证,手机验证码知道在哪<em>**</em>里填写吧?我当时手快没看到，登录成功</li>
+<li>选择“添加资源”， (里面 有4个大块 第一个就是对象存储点击立即添加)</li>
+</ul>
+<ul>
+<li><strong>空间名称</strong>填写,，这个空间名称等下 改json的时候需要用到哈,我这里取名为<strong>test</strong></li>
+<li>地区  访问控制默认, 点击确定创建就完成了 ，创建 完成  后选择 <strong>对象存储</strong>   立即添加 其他 几个 有兴趣的可以试试第二个 要充值10块钱 实名认证 。我支付宝 直接认证通过了.</li>
+</ul>
+<h4 id="配置qshell批量上传"><a href="#配置qshell批量上传" class="headerlink" title="配置qshell批量上传"></a>配置qshell批量上传</h4><ul>
+<li>下载qshell<br><a href="http://developer.qiniu.com/code/v6/tool/qshell.html#download" target="_blank" rel="external">点击进入</a></li>
+</ul>
+<ul>
+<li><p><strong>下载完毕</strong> 点击下载后就是一个压缩包解压后有这些文件</p>
+<p>qshell_darwin_amd64(Mac操作系统)<br>qshell_linux_386<br>qshell_linux_amd64<br>qshell_linux_arm<br>qshell_windows_386.exe(Win64/32应该都可以)<br>qshell_windows_amd64.exe(Win64推荐)</p>
+</li>
+<li><p>下载后各种平台的都有 ,作为window64用户，用的是qshell_windows_amd64.exe,完美运行,</p>
+</li>
+<li><p>把其它 很长的名字改名为qshell 那么长看着不舒服 (你们自己根据自己的操作系统对号入座哈,我下面json填写的是相对目录绝对目录貌似win盘符是</p>
+</li>
+<li><p>://qiniu,qshell)</p>
+</li>
+<li><p>创建 一个目录方便测试 比如 我再f盘 新建一个 <strong>qiniu</strong>文件夹 </p>
+</li>
+<li><p>把qshell.exe放(你的平台支持啥你改名哪个为qshell后面的你懂得,win是EXE)到qiniu文件夹，</p>
+</li>
+<li><p>如果你要配置环境变量你可以随便放哪个目录然后环境引导也行,不过我觉得没必要了</p>
+</li>
+</ul>
+<ul>
+<li>额外啰嗦<br>在 qiniu文件夹里面再创建一个 cdn<em>files ,这名字随便取得哈,然后里面放置一些要做中转的文件图片 </em>&gt;(反正意思就是就是图片和文件放别人空间然后弄个链接过来作为下载或者图片预览)<br>文件一览:<br>F:/qiniu/qshell.exe<br>F:/qiniu/cdn_files (文件夹)<br>F:/qiniu/qiniu_upload.json(json配置文件)<br>F:/qiniu/cdn_files(图片等资源文件存放路径)<br>(本文章是以相对目录为例写教程)</li>
+</ul>
+<blockquote>
+<p>方法1:下载json脚本到</p>
+<p>文件夹,<a href="http://ocobliy5d.bkt.clouddn.com/qiniu_upload.json" target="_blank" rel="external">点击下载</a>或者第二条 点击下载直接被浏览是浏览器问题自个添加下载地址到迅雷或者就复制浏览的得了,</p>
+<p>方法2：新建一个记事本 会修改后缀名吧？还是点击下载吧,其实不修改新建为txt应该也没关系，只是不规范,然后粘贴 保存到qiniu_upload.json道qiniu文件夹 <em>名字随便取得哈</em></p>
+</blockquote>
+<pre><code>{
+   &quot;src_dir&quot;            :   &quot;cdn_files&quot;,
+   &quot;access_key&quot;         :   &quot;******-CKD&quot;,
+   &quot;secret_key&quot;         :   &quot;******__ykj&quot;,
+   &quot;bucket&quot;             :   &quot;test&quot;,
+   &quot;file_list&quot;          :   &quot;&quot;,
+   &quot;zone&quot;               :   &quot;&quot;,
+   &quot;ignore_dir&quot;         :   false,
+   &quot;key_prefix&quot;         :   &quot;q694886526_&quot;,
+   &quot;up_host&quot;            :   &quot;&quot;,
+   &quot;overwrite&quot;          :   false,
+   &quot;check_exists&quot;       :   false,
+   &quot;check_hash&quot;         :   false,
+   &quot;check_size&quot;         :   false,
+   &quot;skip_file_prefixes&quot; :   &quot;.git,bin&quot;,
+   &quot;skip_path_prefixes&quot; :   &quot;hello/,temp/,.git/&quot;,
+   &quot;skip_fixed_strings&quot; :   &quot;.svn&quot;,
+   &quot;skip_suffixes&quot;      :   &quot;.DS_Store,.exe&quot;,
+   &quot;rescan_local&quot;       :   true,
+   &quot;log_file&quot;           :   &quot;upload.log&quot;,
+   &quot;log_level&quot;          :   &quot;info&quot;
 
-block site_title
-    != page.title + " · " + config.title
-
-block description
-    - var desc = page.desc || page.title + ' - ' + config.author;
-    meta(name="description", content=desc)
-
-block container
-    include mixins/post
-    +post(page)
-
-block pagination
-    include mixins/paginator
-    +post()
-    include partial/comment
-
-block copyright
-    include partial/copyright
-
+}
+</code></pre><ul>
+<li>编辑json</li>
+</ul>
+<blockquote>
+<p><strong>复制秘钥</strong> <a href="https://portal.qiniu.com/user/key" target="_blank" rel="external">点我查看秘钥</a><br>json 右边 双引号里面的就是值  需要修改的也就 src_dir 改为 刚刚弄的cdn_files<br>把access_key和secret_key和 json里面的对号入座   bucket 填写 你空间名称 我上面填写的是test,key_prefix就是自动上传的前缀</p>
+<ul>
+<li></li>
+</ul>
+</blockquote>
+<ul>
+<li>WIN+R快捷键输入cmd</li>
+</ul>
+<p>上面的秘钥又要用到了 第三行命令把accesskey和secretkey改成上面填写过的，不要告诉我又不会了.敲入成功后是没啥反应的<br>   作者 可不是这样一步一步切换的我直接打开这个文件夹是直接右键从此处以管理员运行,这个批处理就不上传了网上也有</p>
+<pre><code>cd F:/
+cd F:/qiniu
+qshell account AccessKey SecretKey
+qshell qupload qiniu_upload.json
+</code></pre><p>前面敲入错误自己找原因<br>最后一行也敲入成功如果正常提示是这样的,<img src="http://ocobliy5d.bkt.clouddn.com/succ.png" alt="别看我"><br>Succes列 不作为成功依据, 如果 Fail 对应的右边数字,有值请打开刚刚配置的F:/qiniu 会看到有一个log文件 查看 到底是哪里错误了,错误是英文提示哦,自己百度翻译去,不懂的朋友请大胆留言。</p>
+<h4 id="鼠标操作上传"><a href="#鼠标操作上传" class="headerlink" title="鼠标操作上传"></a>鼠标操作上传</h4><p>   这种方式上传就是不能自动加前缀,不能批量处理大量文件,一个一个上传确实有点累 但是我这篇文文章的教程全是手动上传的 - -!</p>
+<p>  <a href="https://portal.qiniu.com/bucket/test/resource" target="_blank" rel="external">进入我的资源</a></p>
+<p> 然后 点击上传文件 如下图所示:</p>
+<p><img src="http://ocobliy5d.bkt.clouddn.com/handler_upload.png" alt="看我干嘛 看图"></p>
+<h4 id="拷贝链接"><a href="#拷贝链接" class="headerlink" title="拷贝链接"></a>拷贝链接</h4><p>如下图所示:</p>
+<p><img src="http://ocobliy5d.bkt.clouddn.com/copy_link.png" alt="看我干嘛 看图"></p>
+<h4 id="然后呢"><a href="#然后呢" class="headerlink" title="然后呢?"></a>然后呢?</h4><p>  拷贝链接就是如我这篇文章的图片一样了引用呀<a href="http://qssq666.cn" target="_blank" rel="external">欢迎点击广告</a>呀!</p>
+<h4 id="弊端"><a href="#弊端" class="headerlink" title="弊端"></a>弊端</h4><p>七牛和ApiCloud一样耍流氓,免费只是噱头,他不会控制免费超额自动关闭,会让你交费,那么交不了费就滚蛋吧..<br>所以我现在有点后悔，搭建博客，尽量摆脱服务器控制，免得后面为超额另外维护浪费大量青春,个人博客真心不好弄,0成本一家一家的逼我上绝路,感觉还是老外的最靠谱,国内的免费吧，想想就行了，到后来后悔的是你。<br>类似</p>
+</div></article></div><div class="right-container"><div class="widget"><div class="category"><h4>分类归档</h4><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Blog/">Blog</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Photo/">Photo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/QQ技巧/">QQ技巧</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Xposed插件/">Xposed插件</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Xposed插件/抢红包软件/">抢红包软件</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Xposed插件/抢红包软件/机器人宿主/">机器人宿主</a><span class="category-list-count">1</span></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/地球/">地球</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/地球/中国/">中国</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/地球/中国/湖南/">湖南</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/地球/中国/湖南/娄底/">娄底</a><span class="category-list-count">1</span></li></ul></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/测试/">测试</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/版本控制/">版本控制</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/科幻/">科幻</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/网站建设/">网站建设</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/美女/">美女</a><span class="category-list-count">1</span></li></ul></div></div><div class="widget"><div class="tagcloud"><h4>标签云</h4><a href="/tags/CDN/" style="font-size: 10px;">CDN</a> <a href="/tags/Git/" style="font-size: 20px;">Git</a> <a href="/tags/JAVA/" style="font-size: 10px;">JAVA</a> <a href="/tags/QQ技巧/" style="font-size: 10px;">QQ技巧</a> <a href="/tags/WEB/" style="font-size: 20px;">WEB</a> <a href="/tags/android-studio/" style="font-size: 10px;">android studio</a> <a href="/tags/consectetur/" style="font-size: 10px;">consectetur</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/七牛/" style="font-size: 10px;">七牛</a> <a href="/tags/代码编写/" style="font-size: 10px;">代码编写</a> <a href="/tags/图片/" style="font-size: 10px;">图片</a> <a href="/tags/测试/" style="font-size: 10px;">测试</a> <a href="/tags/版本控制/" style="font-size: 20px;">版本控制</a> <a href="/tags/科幻/" style="font-size: 10px;">科幻</a> <a href="/tags/视频/" style="font-size: 10px;">视频</a> <a href="/tags/链接/" style="font-size: 10px;">链接</a></div></div><div class="widget"><div class="recent"><h4>最近文章</h4><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/11/09/了解Q++/">什么是Q++ 什么是内置？什么是 情迁红包，如何使用q++,如何下载更新</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/01/新动态/">转眼又一年</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/01/情迁产品下载地址/">情迁产品下载地址</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/01/hello-world与hexo的开始/">Hello World</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/06/欢迎下载-我开发的安卓APP情迁系统工具箱/">情迁系统工具箱截图</a></li></ul></div></div><div class="widget"><div id="arAnchorBar"></div></div></div></section></div><div class="right-menu"></div><div class="modal search-modal"><div class="input-field"><input type="text" id="search_input"><label for="search-input">搜索</label></div><div id="search_result" class="search-result"></div></div><div class="blog-overlay"></div><footer class="row"><div class="footer-con"><div class="paginator"><a href="/2016/09/05/无标题测试/" class="prev">上一篇</a><a href="/2016/08/26/学习git心得/" class="next">下一篇</a></div><!--PC和WAP自适应版--><div id="SOHUCS" sid="2016/08/30/qiniu_cdn/"> </div><script>(function() {
+    var appid = 'cyt6h19Ve'; 
+    var conf = 'prod_0b4b95efa2ecfede2ddfb5adcef8c394'; 
+    var width = window.innerWidth || document.documentElement.clientWidth; 
+    if (width < 960) { 
+    window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })();</script><div class="copyright"><p>© 2016 - 2018 <a target="_blank">情随事迁</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> <br> and <a href="https://github.com/Bulandent/hexo-theme-bubuzou" target="_blank">hexo-theme-bubuzou</a></p><p>闽ICP备16007301号-2</p></div><div class="totop"><i></i></div></div></footer><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><script src="http://apps.bdimg.com/libs/jquery/1.8.2/jquery.min.js"></script><script src="https://cdn1.lncld.net/static/js/av-mini-0.6.10.js"></script><script src="/scripts/hit-kounter-lc-0.2.0.js"></script><script src="/scripts/arAnchor.js"></script><script src="/scripts/main.js"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script></body></html>
