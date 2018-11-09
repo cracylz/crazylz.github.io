@@ -1,17 +1,21 @@
+extends partial/layout
 
-  
-    <html>
-<head>
-<title>我是好人 </title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes">
-<meta http-equiv="refresh" content="5;url=alipays://platformapi/startapp?saId=10000007&lientVersion=3.7.0.0718&qrcode=https://qr.alipay.com/c1x09104vwt0xobp1vmrr63">
-</head>
-<body>无法跳转?
-<a href="alipays://platformapi/startapp?saId=10000007&lientVersion=3.7.0.0718&qrcode=https://qr.alipay.com/c1x09104vwt0xobp1vmrr63" target="_blank" rel="external">领取福利红包(手机打开哈)</a><br>
+block site_title
+    != page.title + " · " + config.title
 
-<a href="http://qssq666.cn/update" target="_blank" rel="external">下载地址总入口(可能需要vpn翻墙)</a><br>
-<a href="https://qssq666.gitee.io/software" target="_blank" rel="external">下载地址总入口(国内版)</a><br>
-<a href="http://qssq.ys168.com" target="_blank" rel="external">下载地址3!!!!!!</a><br>
-</body>
-</html>
-  
+block description
+    - var desc = page.desc || page.title + ' - ' + config.author;
+    meta(name="description", content=desc)
+
+block container
+    include mixins/post
+    +post(page)
+
+block pagination
+    include mixins/paginator
+    +post()
+    include partial/comment
+
+block copyright
+    include partial/copyright
+

@@ -1,56 +1,21 @@
+extends partial/layout
 
-  
-    <!DOCTYPE html> 
-<html lang="en"> 
-<head>
- <meta charset="UTF-8">
- <title>机器人SDK使用帮助</title>
- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
- <meta name="apple-mobile-web-app-capable" content="yes">
- <meta name="apple-hlkq" content="yes">
- <meta name="apple-mobile-web-app-status-bar-style" content="black">
- <style> html,body,ul,ol,li,form,fieldset,legend{margin:0;padding:5px;}h1,h2,h3,h4,h5,h6,p{margin:0}
- body{height:auto;overflow:auto;background-color:#f2f2f2; color:#676767;
- font-family:Microsoft Yahei,Arial,Helvetica,sans-serif}
- .container{
- max-width: 640px;max-height:1138px;min-height:569px; margin:0 auto;} 
- p{font-size:12px; line-height:300%;} 
- 
- </style> 
- 
- </head>
+block site_title
+    != page.title + " · " + config.title
 
- <body> 
-  <div class="container">
+block description
+    - var desc = page.desc || page.title + ' - ' + config.author;
+    meta(name="description", content=desc)
 
- 
- <h3>插件安装姿势</h3>
-<p>1.可以直接点击安装插件然后选择下载的文件(通常后缀是.apk或者.jar或者是.dex)进行安装</p>
-<p>2.如果你是root机你也可以手动移动插件到/data/data/cn.qssq666.robot/app_plugins/文件夹下</p>
-<p>3.通常如果是apk方式的apk可以直接主动安装到此目录,但是可能需要root权限</p>
+block container
+    include mixins/post
+    +post(page)
 
-<h3>到哪里下载机器人插件</h3>
-<p><a href="http://qssq.ys168.com" target="_blank" rel="external">永硕网盘</a> <a href="http://qssq666.cn/update" target="_blank" rel="external">所有软件升级入口</a>  可以找到蛛丝马迹
-</p> 
-<p> 目前2018-3-18 14:08:43为止只开发了一个插件,各位别找了,第三方开发者想开发的话自己开发好了,目前机器人的功能基本上可以满足需求了,特别是用于管理群.
-目前作者本人就开发了一个不在本群成员就自动禁言的插件,在永硕网盘提供下载了,目前群管功能是内置嵌入的，</p>
+block pagination
+    include mixins/paginator
+    +post()
+    include partial/comment
 
+block copyright
+    include partial/copyright
 
-<h3>第三方开发者开发sdk帮助</h3>
-<p> 如果你会java那么就可以开发机器人插件.因为sdk本身不需要生成一个apk.直接引入我提供的sdk工具包即可,</p>
-<p> sdk工具包在永硕网盘下载,你可以用来开发定时闹钟,卡片消息(禁止发送诈骗卡片消息,这样人神共愤,这个卡片也只能会腾讯被早早和谐)</p>
-
- <h3>机器人都不会用????</h3>
-<p>1到上面的永硕网盘下载txt文档,以后我可能会更新视频教程,会的朋友也可以录制视频给我,我好公布出来。或者加群226573967体验机器人,通常作者群里的机器人是最新版的,有没有bug,好不好用大家都可以体验.</p>
- <h3>想要得到更多帮助</h3>
-<p>软件是免费的,但是每一个人都不是傻逼,还是渴望得到打赏的,打赏了的朋友我会特别给你回复帮你解决你遇到的问题,注意,有问题注意消息描述,是否是按照文档一步一步来,问题出在哪一步,不然你直接说你不会用我也很难帮你,通常学会如何描述表达自己遇到的问题的人更能快速得到解决!这也是学会做人的道理,</p>
-要打赏的朋友建议QQ打赏,qq:694886526
- <p align="right">情随事迁编辑于2018-3-18 14:12:00</p>
- </div> 
-
- </body>
- </html>
-
-
-
-  

@@ -1,122 +1,21 @@
+extends partial/layout
 
-<!DOCTYPE HTML>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  
-    <title>search | 情迁美好时光追忆</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
-    
-    <meta name="author" content="情随事迁">
-    
+block site_title
+    != page.title + " · " + config.title
 
-    
-    <meta name="description" content="人生在世 生活怎么选择 怎么快乐 每个人有不同的看法,而我 对人生的看法就是,我不奢望金钱和权力,奢望时间,奢望和谐的社会,奢望不忘的记忆,我有无比绝大的求知欲望,缺又不不得不面对记忆因为当下没有去应用而被遗忘,而人和电脑核心一样，多线程也只能叫切换,不能同时工作! 所以这是我奢望的也是求之不来的东西.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="search">
-<meta property="og:url" content="http://www.qssq666.cn/search/index.html">
-<meta property="og:site_name" content="情迁美好时光追忆">
-<meta property="og:description" content="人生在世 生活怎么选择 怎么快乐 每个人有不同的看法,而我 对人生的看法就是,我不奢望金钱和权力,奢望时间,奢望和谐的社会,奢望不忘的记忆,我有无比绝大的求知欲望,缺又不不得不面对记忆因为当下没有去应用而被遗忘,而人和电脑核心一样，多线程也只能叫切换,不能同时工作! 所以这是我奢望的也是求之不来的东西.">
-<meta property="og:updated_time" content="2017-04-23T13:57:08.000Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="search">
-<meta name="twitter:description" content="人生在世 生活怎么选择 怎么快乐 每个人有不同的看法,而我 对人生的看法就是,我不奢望金钱和权力,奢望时间,奢望和谐的社会,奢望不忘的记忆,我有无比绝大的求知欲望,缺又不不得不面对记忆因为当下没有去应用而被遗忘,而人和电脑核心一样，多线程也只能叫切换,不能同时工作! 所以这是我奢望的也是求之不来的东西.">
-<meta name="twitter:creator" content="@luozheng6">
+block description
+    - var desc = page.desc || page.title + ' - ' + config.author;
+    meta(name="description", content=desc)
 
-    
-    <link rel="alternative" href="/atom.xml" title="情迁美好时光追忆" type="application/atom+xml">
-    
-    
-    <link rel="icon" href="/img/favicon.ico">
-    
-    
-    <link rel="apple-touch-icon" href="/img/logo.png">
-    <link rel="apple-touch-icon-precomposed" href="/img/logo.png">
-    
-    <link rel="stylesheet" href="/css/style.css">
-</head>
+block container
+    include mixins/post
+    +post(page)
 
-    <body>
-      <header>
-        
-<div>
-		
-			<div id="textlogo">
-				<h1 class="site-name"><a href="/" title="情迁美好时光追忆">情迁美好时光追忆</a></h1>
-				<h2 class="blog-motto">情迁美好时光追忆 执拗如我 执着如我,纠结如我,虽然无法活出最好的自己,但是总算活出一个不一样的自己!</h2>
-			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
-			</a></div>
-			<nav class="animated">
-				<ul>
-					<ul>
-					 
-						<li><a href="/">主页</a></li>
-					
-						<li><a href="/archives">归档</a></li>
-					
-						<li><a href="/categories">分类</a></li>
-					
-						<li><a href="/tags">标签</a></li>
-					
-						<li><a href="/messagebroad">留言板</a></li>
-					
-						<li><a href="/utils">工具</a></li>
-					
-						<li><a href="/about">关于</a></li>
-					
-					<li>
- 					
-						<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
-						<label>Search</label>
-						<input type="text" id="search" class="st-default-search-input" maxlength="20" placeholder="搜索" />
-						</form>
-					
-					</li>
-				</ul>
-			</nav>			
+block pagination
+    include mixins/paginator
+    +post()
+    include partial/comment
 
-</div>
+block copyright
+    include partial/copyright
 
-      </header>
-      <div id="container">
-        
-
-<div  id="container" class="page">
-  <div id="st-results-container" style="width:80%">正在加载搜索结果，请稍等。</div>
-  <style>.st-result-text {
-  background: #fafafa;
-  display: block;
-  border-left: 0.5em solid #ccc;
-  -webkit-transition: border-left 0.45s;
-  -moz-transition: border-left 0.45s;
-  -o-transition: border-left 0.45s;
-  -ms-transition: border-left 0.45s;
-  transition: border-left 0.45s;
-  padding: 0.5em;
-}
-@media only screen and (min-width: 768px) {
-  .st-result-text {
-    padding: 1em;
-  }
-}
-.st-result-text:hover {
-  border-left: 0.5em solid #ea6753;
-}
-.st-result-text h3 a{
-  color: #2ca6cb;
-  line-height: 1.5;
-  font-size: 22px;
-}
-.st-snippet em {
-  font-weight: bold;
-  color: #ea6753;
-}</style>
-
-
-
-      </div>
-  
-
-    </body>
-   </html>
