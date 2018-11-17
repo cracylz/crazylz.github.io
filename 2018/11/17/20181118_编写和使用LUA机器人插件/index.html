@@ -1,0 +1,145 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="baidu-site-verification" content=""><meta name="google-site-verification" content=""><title> 情迁QQ机器人新功能可使用lua脚本编写机器人插件啦 · 情迁美好时光追忆</title><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="情迁QQ机器人新功能可使用lua脚本编写机器人插件啦 - 情随事迁"><meta name="keywords"><meta name="author" content="情随事迁"><link rel="short icon" href="/images/favicon.ico"><link rel="stylesheet" href="/css/bubuzou.css"><link rel="search" type="application/opensearchdescription+xml" href="http://www.qssq666.cn/atom.xml" title="情迁美好时光追忆"></head><body><header><div class="header row"> <a href="/" class="logo-link"><img src="/images/logo.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" data-hover="博文" class="nav-list-link">博文</a></li><li class="nav-list-item"><a href="/archives/" target="_self" data-hover="归档" class="nav-list-link">归档</a></li><li class="nav-list-item"><a href="/categories/live/" target="_self" data-hover="生活" class="nav-list-link">生活</a></li><li class="nav-list-item"><a href="/update/" target="_self" data-hover="下载" class="nav-list-link">下载</a></li><li class="nav-list-item"><a href="/about/" target="_self" data-hover="关于" class="nav-list-link">关于</a></li></ul><div class="search"><a id="search_btn" href="#search"></a></div></div></header><div class="row scroll-con"><section class="container"><!-- for archive page--><div id="postAr" class="post"><article class="post-block"><h1 class="post-title">情迁QQ机器人新功能可使用lua脚本编写机器人插件啦</h1><div class="post-info">2018-11-17<p class="visit"><i data-hk-page="current">-</i><span>次访问</span></p></div><div class="post-content"><p>本文将详细介绍Lua机器人插件的使用方法，更详细的内容也可以参考简书哦!机器人1.9.0支持lua插件加载，支持手机端lua编写插件 机器人内置lua编辑器，可以测试，运行机器人功能，<br>lua是一种脚本语言，解释运行，随意修改，无需编译，便于修改和分享，操作简单，开发成本低，传播更方便。</p>
+<a id="more"></a>
+<p>本文章转载自情迁简书 <a href="https://www.jianshu.com/p/92c7bf329653" target="_blank" rel="external">https://www.jianshu.com/p/92c7bf329653</a> </p>
+<h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>目前支持机器人lua插件在2018年11月17日发布了，各位记得先情迁下载QQ机器人哈</p>
+<p>本文章会慢慢补充,lua机器人插件能力将在情迁QQ机器人 1.8.8以及以上版本体现.</p>
+<h3 id="安装目录"><a href="#安装目录" class="headerlink" title="安装目录"></a>安装目录</h3><p>新建lua文件 也即是<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">### LUA语法介绍</div><div class="line">不懂lua语法的可以百度一下,  这里大概介绍一下基本的lua语法也就是和其它语言不相同的地方。</div><div class="line">字符串拼接用```..```  数字转文本用```tostring(要转换的变量)</div></pre></td></tr></table></figure></p>
+<p><strong>方法定义</strong><br>参数名 没有类型,这是脚本语言的特点,简单的不能再简单，如js,python php<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">function 方法名(参数名)</div><div class="line"></div><div class="line">end</div></pre></td></tr></table></figure></p>
+<p>有返回值的方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">function 方法名(参数名)</div><div class="line">return true;</div><div class="line">end</div></pre></td></tr></table></figure></p>
+<p><strong>调用对象方法</strong><br><figure class="highlight plain"><figcaption><span>这里使用```:```而java是用```.```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">**访问对象字段**</div><div class="line">输入```log(robot.name))``` 这是本机器人支持的访问举例.</div><div class="line">**注释**</div><div class="line">lua的注释是用 ```--``` 而java是用```//``` 易语言则用```’```  或者某些语言用```#``` bat 批处理用 ```::</div></pre></td></tr></table></figure></p>
+<p><strong>类型转换</strong><br>字符串转number<br><figure class="highlight lua"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">str=<span class="string">"333"</span></div><div class="line">value=<span class="built_in">tonumber</span>(str)</div><div class="line">value=value+<span class="number">1</span>  <span class="comment">-- lua似乎不能自增，只能这么写</span></div></pre></td></tr></table></figure></p>
+<p>其他类型转字符串<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">obj=333</div><div class="line">value=tostring(obj)</div></pre></td></tr></table></figure></p>
+<p><strong>变量定义</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">global_var = 1 --全局变量</div><div class="line">local temp_var = 2 --局部变量</div></pre></td></tr></table></figure></p>
+<p><strong>循环</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">while (temp &lt; 5) do</div><div class="line">    temp = temp + 1</div><div class="line">    print(&quot;result:&quot; .. tostring(temp)) --这里体现了类型转换的语法。</div><div class="line">end</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">for i = 1, 3 do</div><div class="line">    print(&quot;从1 到 3,当前:&quot; .. tostring(i))</div><div class="line">end</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">for i = 1, 6, 2 do</div><div class="line">    print(&quot;高级用法 当前:&quot; .. tostring(i) .. &quot;,我每下次执行将跳动2次，如果当前为1那么为1,下次则为3，i&gt;6跳出循环&quot;)</div><div class="line">end</div></pre></td></tr></table></figure>
+<p><strong>逻辑分支</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">if (value1 &gt; 10) then</div><div class="line">    print(&quot;值大于10&quot;)</div><div class="line">    if (value1 == 80) then</div><div class="line">        print(&quot;内循环,等于80&quot;)</div><div class="line">    else</div><div class="line">        print(&quot;不是80，但是肯定&gt;10&quot;)</div><div class="line">    end</div><div class="line">elseif (value1 == 100) then</div><div class="line">    print(&quot;等于100&quot;)</div><div class="line">else</div><div class="line">    print(&quot;不知道等于夺嫂了&quot;)</div><div class="line">end</div></pre></td></tr></table></figure></p>
+<p>控制台输出<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">print(&quot;ffff&quot;) --lua本身的语法，这个需要打开adb.exe查看过滤</div><div class="line">System.out日志类型</div></pre></td></tr></table></figure></p>
+<h3 id="情迁QQ机器人SDK独有api参数"><a href="#情迁QQ机器人SDK独有api参数" class="headerlink" title="情迁QQ机器人SDK独有api参数"></a>情迁QQ机器人SDK独有api参数</h3><p><strong>第一步/必须导包</strong><br>如果不导包，将无法正常使用下面这些方法。博客语法有冲突，勿怪。下面的这行</p>
+<pre><code>require &quot;cn.qssq666.robot.sdk&quot;
+</code></pre><p>日志提示</p>
+<pre><code>log(&quot;&quot;警告日志&quot;)--输出警告日志
+info(&quot;info日志&quot;)
+debug(&quot;debug日志&quot;)
+error(&quot;红色错误日志&quot;)
+toast(&quot;toast提示日志&quot;)``这个运行后直接弹出气泡提示
+</code></pre><p><em>lua掌握这一点点你就完全可以操作机器人大部分功能了  关于api方面呢其实和java doc api一样的，所以呢本文没有说明的方法完全可以举一反三的 从java 插件开发文档里面找到</em></p>
+<p><strong>收到消息的回调</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">function onReceiveMsgIsNeedIntercept(msgitem, aiteList, hasAite, hasAiteMe)</div><div class="line"></div><div class="line">end</div></pre></td></tr></table></figure>
+<p><strong>发送消息给指定人</strong><br>这里的item是必须的，这个函数应该在<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">``` </div><div class="line">api. sendPrivateMsg(item, qq,message);</div></pre></td></tr></table></figure></p>
+<p>更多api,完全可以参考java api推算出来，我有空会写一个完整的demo,现在还在架构机器人中….</p>
+<h3 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line">require &quot;cn.qssq666.robot.sdk&quot;</div><div class="line"></div><div class="line">--  msgitem 消息体</div><div class="line">-- aitelist 艾特的用户列表（不会包含自己)</div><div class="line">-- hasAite 是否艾特了用户</div><div class="line">-- hasAiteMe  是否艾特了机器人</div><div class="line"></div><div class="line">function onReceiveMsgIsNeedIntercept(msgitem, aiteList, hasAite, hasAiteMe)</div><div class="line">	log(&quot;call onReceiveMsgIsNeedIntercept&quot;)</div><div class="line">	text = msgitem:getMessage() --获取收到的消息内容</div><div class="line">	log(&quot;receiveMsg:&quot; .. text)</div><div class="line">	qq = msgitem:getSenderuin() -- 哪个qq发的消息</div><div class="line">	log(&quot;print toString[&quot; .. msgitem:toString()) --这个方法可以打印昵称,qq,消息内容,发送时间,等等。</div><div class="line"></div><div class="line">	info = &quot;,aiteUser=,&quot; .. tostring(hasAite) .. &quot;,aiteRobot:&quot; .. tostring(hasAiteMe)</div><div class="line">	 --见名知意</div><div class="line">	log(&quot;state:&quot; .. info)</div><div class="line">	return true</div><div class="line">end</div><div class="line"></div><div class="line">--下面的代码无关紧要，自己酌情修改------------------------------</div><div class="line">function onCreate(obj)</div><div class="line">	log(&quot;onCreate call arg type: &quot; .. type(obj))</div><div class="line">end</div><div class="line"></div><div class="line">function getPluginName()</div><div class="line">	return &quot;test plugin&quot;</div><div class="line">end</div><div class="line"></div><div class="line">function onDestory()</div><div class="line">	log(&quot;destory call&quot;)</div><div class="line">end</div></pre></td></tr></table></figure>
+<p>再来一个能用的，发送消息<code>LUA</code>就会自动回复的机器人插件<br>复制下面的内容另存为 任意名.lua文件然后放到内部存储的qssq666/robot_plugin_lua文件夹中，然后运行情迁QQ机器人1.9.0<br>然后进入LUA插件管理就可以看到机器人了，记得进入机器人设置勾选启用机器人插件哦，不然发送消息<code>LUA</code>没有任何反应的哈<br>还可以长按编辑这个插件修改逻辑，也可以点击模拟测试一些机器人方法是否定义的情况。</p>
+<pre><code>-- 编写时间 2018.11
+-- 文件编码 必须是UTF-8 must UTF-8
+-- LUA插件的方法不受执行流程控制,因此测试这些代码的时候只能发送消息然后测试这些方法。
+--或者可以不写在主流程中，比如如下代码的测试专用可以解除注释，当机器人加载的时候会气泡提示的toast调试，
+
+
+require &quot;cn.qssq666.robot.sdk&quot; --必须调用，否则无法使用api,等方法，以及toast等，只能使用print了。
+--测试专用代码区开始 
+
+--可以直接运行 本文件放到内部存储 qssq666/robot_plugin_lua文件夹改后缀名 为.lua 然后在lua插件管理列表刷新然后长按运行或者编辑再运行。
+-- 直接输入 adb push plugin.lua /sdcard/qssq666/robot_plugin_lua/ 推送到手机上。
+
+
+
+
+--toast(&quot;插件被加载，插件名:&quot;..getPluginName())
+--下面的调试代码需要通过日志查看软件或者电脑ADBConsole.exe查看。
+--info(&quot;插件加载了,&quot;)
+--warn(&quot;这是警告日志&quot;)
+--error(&quot;红色错误日志&quot;)
+--log(&quot;也是警告日志语法糖&quot;)
+--debug(&quot;调试信息，&quot;)
+
+--测试专用代码区结束
+
+--  ---------------------机器人插件加载区
+--  msgitem 消息体
+-- aitelist 艾特的用户列表（不会包含自己)
+-- hasAite 是否艾特了用户
+-- hasAiteMe  是否艾特了机器人
+--收到一条消息调用此方法，返回true表示 消息由插件处理
+--，否则交给机器人自身的逻辑，比如自身有点歌系统之类的。
+--本方法不定义将毫无意义。
+function onReceiveMsgIsNeedIntercept(msgitem, aiteList, hasAite, hasAiteMe)
+    log(&quot;call onReceiveMsgIsNeedIntercept&quot;)
+   local text = msgitem:getMessage() --获取收到的消息内容
+    log(&quot;receiveMsg:&quot; .. text)
+    local qq = msgitem:getSenderuin() -- 哪个qq发的消息
+    log(&quot;print toString[&quot; .. msgitem:toString()) --这个方法可以打印昵称,qq,消息内容,发送时间,等等。
+    if (text == &quot;LUA&quot;) then
+        -- chunkname:41 attempt to index ? (a nil value) zhaobu
+        local str=&quot;Wellcome Use Lua Plugin! The is QssqRobot&quot;
+        msgitem:setMessage(str)
+        print(&quot;item is nil?=&quot;..tostring(msgitem:getClass()==nil)..&quot;,className:&quot;..tostring(msgitem:getClass()))
+        print(&quot;api obj is nil?=&quot;..tostring(msgitem:getClass()==nil)..&quot;,className:&quot;..tostring(api:getClass()))
+        print(api:toString())
+        api:showDebugToast(&quot;欢迎使用LUA机器人插件&quot;);
+        -- print();
+        -- print(msgitem:toString())
+        api:sendMsg(msgitem) --是啥子消息我就回复啥消息 ，操作起来比较简单。
+        return true
+     --插件自身处理消息
+    else
+    end
+    info = &quot;,aiteUser=,&quot; .. tostring(hasAite) .. &quot;,aiteRobot:&quot; .. tostring(hasAiteMe)
+    --见名知意
+    log(&quot;state:&quot; .. info)
+    return false
+end
+
+--下面的代码无关紧要，自己酌情修改 ,可以不定义，------------------------------
+--插件被加载的时候出发
+function onCreate(obj)
+    print(&quot;onCreate....[print]&quot;)
+    log(&quot;onCreate call arg type: &quot; .. type(obj))
+end
+--表示机器人最终处理的消息，即将发送的消息，是否拦截
+function onReceiveRobotFinalCallMsgIsNeedIntercept(item, list, aite, haisaiteme)
+    debug(&quot;call onReceiveRobotFinalCallMsgIsNeedIntercept..&quot;);
+    return false
+end
+--插件作者名字 
+function getAuthorName()
+    return &quot;情迁2018&quot;
+end
+--返回插件名称，再插件管理列表可以显示
+function getPluginName()
+    return &quot;test plugin&quot;
+end
+
+--返回本插件的版本号 
+function getVersionName()
+    return &quot;1.0&quot; --返回机器人的版本号
+end
+--返回本插件的版本号 数字标识 整数
+function getVersionCode()
+    return 1;
+end
+--返回编译时间字符串
+function getBuildTime( )
+    -- body
+    return &quot;无&quot;
+end
+
+
+--返回插件的描述信息
+function getDescript()
+    return &quot;这是一个DEMO&quot;
+end
+-- 返回插件demo包名
+function getPackageName()
+    return &quot;cn.qssq666.lua.plugindemo&quot;
+end
+--即将被销毁调用的方法。
+function onDestory()
+    log(&quot;destory call&quot;)
+end
+</code></pre></div></article></div><div class="right-container"><div class="widget"><div class="category"><h4>分类归档</h4><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Blog/">Blog</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Photo/">Photo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/QQ技巧/">QQ技巧</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Xposed插件/">Xposed插件</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Xposed插件/抢红包软件/">抢红包软件</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Xposed插件/抢红包软件/机器人宿主/">机器人宿主</a><span class="category-list-count">1</span></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/地球/">地球</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/地球/中国/">中国</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/地球/中国/湖南/">湖南</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/地球/中国/湖南/娄底/">娄底</a><span class="category-list-count">1</span></li></ul></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/情迁QQ机器人/">情迁QQ机器人</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/测试/">测试</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/版本控制/">版本控制</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/科幻/">科幻</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/网站建设/">网站建设</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/美女/">美女</a><span class="category-list-count">1</span></li></ul></div></div><div class="widget"><div class="tagcloud"><h4>标签云</h4><a href="/tags/CDN/" style="font-size: 10px;">CDN</a> <a href="/tags/Git/" style="font-size: 20px;">Git</a> <a href="/tags/JAVA/" style="font-size: 10px;">JAVA</a> <a href="/tags/Lua/" style="font-size: 10px;">Lua</a> <a href="/tags/QQ技巧/" style="font-size: 10px;">QQ技巧</a> <a href="/tags/WEB/" style="font-size: 20px;">WEB</a> <a href="/tags/android-studio/" style="font-size: 10px;">android studio</a> <a href="/tags/consectetur/" style="font-size: 10px;">consectetur</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/七牛/" style="font-size: 10px;">七牛</a> <a href="/tags/代码编写/" style="font-size: 10px;">代码编写</a> <a href="/tags/图片/" style="font-size: 10px;">图片</a> <a href="/tags/插件/" style="font-size: 10px;">插件</a> <a href="/tags/机器人/" style="font-size: 10px;">机器人</a> <a href="/tags/测试/" style="font-size: 10px;">测试</a> <a href="/tags/版本控制/" style="font-size: 20px;">版本控制</a> <a href="/tags/科幻/" style="font-size: 10px;">科幻</a> <a href="/tags/视频/" style="font-size: 10px;">视频</a> <a href="/tags/链接/" style="font-size: 10px;">链接</a></div></div><div class="widget"><div class="recent"><h4>最近文章</h4><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/11/17/20181118_编写和使用LUA机器人插件/">情迁QQ机器人新功能可使用lua脚本编写机器人插件啦</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/11/09/了解Q++/">什么是Q++ 什么是内置？什么是 情迁红包，如何使用q++,如何下载更新</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/01/新动态/">转眼又一年</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/01/情迁产品下载地址/">情迁产品下载地址</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/01/hello-world与hexo的开始/">Hello World</a></li></ul></div></div><div class="widget"><div id="arAnchorBar"></div></div></div></section></div><div class="right-menu"></div><div class="modal search-modal"><div class="input-field"><input type="text" id="search_input"><label for="search-input">搜索</label></div><div id="search_result" class="search-result"></div></div><div class="blog-overlay"></div><footer class="row"><div class="footer-con"><div class="paginator"><a href="/2018/11/09/了解Q++/" class="next">下一篇</a></div><!--PC和WAP自适应版--><div id="SOHUCS" sid="2018/11/17/20181118_编写和使用LUA机器人插件/"> </div><script>(function() {
+    var appid = 'cytVgXm93'; 
+    var conf = 'prod_cdc350d6db370c4c1e9bfc78a6178a27'; 
+    var width = window.innerWidth || document.documentElement.clientWidth; 
+    if (width < 960) { 
+    window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })();</script><div class="copyright"><p>© 2016 - 2018 <a target="_blank">情随事迁</a>, 微博 <a href="https://weibo.com/qssq666" target="_blank">qssq666</a> <br> 以及 <a href="http://qssq.ys168.com" target="_blank">某网盘</a></p><p>粤ICP备16079388号-1</p></div><div class="totop"><i></i></div></div></footer><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><script src="http://apps.bdimg.com/libs/jquery/1.8.2/jquery.min.js"></script><script src="https://cdn1.lncld.net/static/js/av-mini-0.6.10.js"></script><script src="/scripts/hit-kounter-lc-0.2.0.js"></script><script src="/scripts/arAnchor.js"></script><script src="/scripts/main.js"></script></body></html>
