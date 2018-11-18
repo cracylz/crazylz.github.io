@@ -198,6 +198,13 @@
   </url>
   
   <url>
+    <loc>http://www.qssq666.cn/2016/09/05/photoview/</loc>
+    
+    <lastmod>2017-04-23T13:57:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.qssq666.cn/2016/09/05/video/</loc>
     
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
@@ -233,13 +240,6 @@
   </url>
   
   <url>
-    <loc>http://www.qssq666.cn/2016/09/05/photoview/</loc>
-    
-    <lastmod>2017-04-23T13:57:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.qssq666.cn/404.html</loc>
     
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
@@ -247,14 +247,14 @@
   </url>
   
   <url>
-    <loc>http://www.qssq666.cn/categories/index.html</loc>
+    <loc>http://www.qssq666.cn/bgsearch/index.html</loc>
     
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.qssq666.cn/bgsearch/index.html</loc>
+    <loc>http://www.qssq666.cn/categories/index.html</loc>
     
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
     
@@ -275,14 +275,14 @@
   </url>
   
   <url>
-    <loc>http://www.qssq666.cn/live/share.html</loc>
+    <loc>http://www.qssq666.cn/live/chat_service.json</loc>
     
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.qssq666.cn/live/chat_service.json</loc>
+    <loc>http://www.qssq666.cn/live/share.html</loc>
     
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
     
@@ -303,14 +303,14 @@
   </url>
   
   <url>
-    <loc>http://www.qssq666.cn/search/index.html</loc>
+    <loc>http://www.qssq666.cn/tags/index.html</loc>
     
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.qssq666.cn/tags/index.html</loc>
+    <loc>http://www.qssq666.cn/search/index.html</loc>
     
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
     
@@ -324,14 +324,14 @@
   </url>
   
   <url>
-    <loc>http://www.qssq666.cn/utils/index.html</loc>
+    <loc>http://www.qssq666.cn/utils/nickutil.html</loc>
     
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.qssq666.cn/utils/nickutil.html</loc>
+    <loc>http://www.qssq666.cn/utils/index.html</loc>
     
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
     
