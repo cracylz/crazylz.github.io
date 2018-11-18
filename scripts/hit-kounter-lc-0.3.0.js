@@ -147,9 +147,11 @@ function(e, t, n) {
     });
     var a = n(2),
     o = r(a),
-    i = {
-        APP_ID: "yzbpXQpXf1rWVRfAAM8Durgh-gzGzoHsz",
-        APP_KEY: "020bjTvbiVinVQ21YtWAJ9t8",
+    i = {//后端云api填写
+        // APP_ID: "yzbpXQpXf1rWVRfAAM8Durgh-gzGzoHsz",
+		// APP_KEY: "020bjTvbiVinVQ21YtWAJ9t8",
+		APP_ID: "F6nlq6injm5lOkSElmL6XBuk-gzGzoHsz",
+        APP_KEY: "vpFA1c4HVyclDrUdKGOagqOz",
         request: function() {
             function e(e) {
                 u(e.code, e)
