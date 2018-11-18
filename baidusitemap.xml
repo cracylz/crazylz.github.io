@@ -164,6 +164,26 @@
     
     
   <url>
+    <loc>http://qssq666.cn/2016/09/05/link/</loc>
+    <lastmod>2017-04-23T13:57:08.000Z</lastmod>
+    <data>
+        <display>
+        <title>点击标题链接跳转到指定网址</title>
+        <pubTime>2016-09-04T16:00:00.000Z</pubTime>
+        
+        <tag>链接</tag>
+         
+         
+           
+             
+              <breadCrumb title="测试" url="http://qssq666.cn/categories/%E6%B5%8B%E8%AF%95/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://qssq666.cn/2016/09/05/photoview/</loc>
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
     <data>
@@ -192,26 +212,6 @@
         <pubTime>2016-09-04T16:00:00.000Z</pubTime>
         
         <tag>视频</tag>
-         
-         
-           
-             
-              <breadCrumb title="测试" url="http://qssq666.cn/categories/%E6%B5%8B%E8%AF%95/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://qssq666.cn/2016/09/05/link/</loc>
-    <lastmod>2017-04-23T13:57:08.000Z</lastmod>
-    <data>
-        <display>
-        <title>点击标题链接跳转到指定网址</title>
-        <pubTime>2016-09-04T16:00:00.000Z</pubTime>
-        
-        <tag>链接</tag>
          
          
            
