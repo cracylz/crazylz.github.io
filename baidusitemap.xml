@@ -4,6 +4,32 @@
 
     
   <url>
+    <loc>http://qssq666.cn/2018/11/18/about_use_robot/</loc>
+    <lastmod>2018-11-18T07:21:12.722Z</lastmod>
+    <data>
+        <display>
+        <title>情迁QQ机器人的使用步骤，看完这篇文章你就明白了。</title>
+        <pubTime>2018-11-17T16:00:00.000Z</pubTime>
+        
+        <tag>情迁QQ机器人</tag>
+         
+        <tag>xposed插件</tag>
+         
+        <tag>分身大师</tag>
+         
+        <tag>免Root</tag>
+         
+         
+           
+             
+              <breadCrumb title="Blog" url="http://qssq666.cn/categories/Blog/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://qssq666.cn/2018/11/17/20181118_LUA_robot_plugin/</loc>
     <lastmod>2018-11-18T05:27:54.339Z</lastmod>
     <data>
@@ -138,26 +164,6 @@
     
     
   <url>
-    <loc>http://qssq666.cn/2016/09/05/photoview/</loc>
-    <lastmod>2017-04-23T13:57:08.000Z</lastmod>
-    <data>
-        <display>
-        <title>照片欣赏</title>
-        <pubTime>2016-09-04T16:00:00.000Z</pubTime>
-        
-        <tag>consectetur</tag>
-         
-         
-           
-             
-              <breadCrumb title="Photo" url="http://qssq666.cn/categories/Photo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://qssq666.cn/2016/09/05/link/</loc>
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
     <data>
@@ -171,6 +177,26 @@
            
              
               <breadCrumb title="测试" url="http://qssq666.cn/categories/%E6%B5%8B%E8%AF%95/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://qssq666.cn/2016/09/05/photoview/</loc>
+    <lastmod>2017-04-23T13:57:08.000Z</lastmod>
+    <data>
+        <display>
+        <title>照片欣赏</title>
+        <pubTime>2016-09-04T16:00:00.000Z</pubTime>
+        
+        <tag>consectetur</tag>
+         
+         
+           
+             
+              <breadCrumb title="Photo" url="http://qssq666.cn/categories/Photo/"/>
           
         </display>
     </data>
