@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://qssq666.cn/2018/11/18/%E8%A7%86%E9%A2%91%E6%8E%A8%E8%8D%90/</loc>
+    
+    <lastmod>2018-11-18T15:56:32.684Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://qssq666.cn/2016/09/05/video/</loc>
+    
+    <lastmod>2018-11-18T15:47:26.559Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://qssq666.cn/2018/11/18/about_use_robot/</loc>
     
     <lastmod>2018-11-18T07:21:12.722Z</lastmod>
@@ -212,13 +226,6 @@
   </url>
   
   <url>
-    <loc>http://qssq666.cn/2016/09/05/video/</loc>
-    
-    <lastmod>2017-04-23T13:57:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://qssq666.cn/2016/09/05/%E5%A4%9A%E7%BA%A7%E7%9B%AE%E5%BD%95%E6%B5%8B%E8%AF%95/</loc>
     
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
@@ -240,21 +247,7 @@
   </url>
   
   <url>
-    <loc>http://qssq666.cn/2016/11/04/%E8%A7%86%E9%A2%91%E6%8E%A8%E8%8D%90/</loc>
-    
-    <lastmod>2017-04-23T13:57:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://qssq666.cn/404.html</loc>
-    
-    <lastmod>2017-04-23T13:57:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://qssq666.cn/categories/index.html</loc>
     
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
     
@@ -268,14 +261,21 @@
   </url>
   
   <url>
-    <loc>http://qssq666.cn/live/chat_group.json</loc>
+    <loc>http://qssq666.cn/categories/index.html</loc>
     
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://qssq666.cn/live/chat_service.json</loc>
+    <loc>http://qssq666.cn/live/share.html</loc>
+    
+    <lastmod>2017-04-23T13:57:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://qssq666.cn/live/chat_group.json</loc>
     
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
     
@@ -289,7 +289,7 @@
   </url>
   
   <url>
-    <loc>http://qssq666.cn/live/share.html</loc>
+    <loc>http://qssq666.cn/live/chat_service.json</loc>
     
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
     
