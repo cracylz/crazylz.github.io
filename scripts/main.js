@@ -155,7 +155,7 @@
     var _hmt = _hmt || [];
     (function() {
         var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?47acec2d282c3986f1b600abdc11c7ab";
+        hm.src = "https://hm.baidu.com/hm.js?f8120c3897525f9b0eaed9fe86396b39";
         var s = document.getElementsByTagName("script")[0]; 
         s.parentNode.insertBefore(hm, s);
     })();

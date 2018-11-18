@@ -269,26 +269,6 @@
 
     
   <url>
-    <loc>http://qssq666.cn/2016/09/05/%E6%97%A0%E6%A0%87%E9%A2%98%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2017-04-23T13:57:08.000Z</lastmod>
-    <data>
-        <display>
-        <title></title>
-        <pubTime>2016-09-04T16:00:00.000Z</pubTime>
-        
-        <tag>测试</tag>
-         
-         
-           
-             
-              <breadCrumb title="测试" url="http://qssq666.cn/categories/%E6%B5%8B%E8%AF%95/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://qssq666.cn/2016/11/04/%E8%A7%86%E9%A2%91%E6%8E%A8%E8%8D%90/</loc>
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
     <data>
@@ -302,6 +282,26 @@
            
              
               <breadCrumb title="科幻" url="http://qssq666.cn/categories/%E7%A7%91%E5%B9%BB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://qssq666.cn/2016/09/05/%E6%97%A0%E6%A0%87%E9%A2%98%E6%B5%8B%E8%AF%95/</loc>
+    <lastmod>2017-04-23T13:57:08.000Z</lastmod>
+    <data>
+        <display>
+        <title></title>
+        <pubTime>2016-09-04T16:00:00.000Z</pubTime>
+        
+        <tag>测试</tag>
+         
+         
+           
+             
+              <breadCrumb title="测试" url="http://qssq666.cn/categories/%E6%B5%8B%E8%AF%95/"/>
           
         </display>
     </data>

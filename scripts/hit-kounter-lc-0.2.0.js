@@ -51,7 +51,7 @@ function(e) {
             e.pages = {};
             for (var n = 0; n < t.length; ++n) {
                 var r = t[n].attributes["data-hk-page"].value,
-                a = e.pages[r];
+                a = e.pages[r];//不等于就？ t是 pages ,n是当前页面，
                 "current" != r && (a ? a.push(t[n]) : e.pages[r] = [t[n]])
             }
         },
