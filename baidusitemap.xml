@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://qssq666.cn/2018/11/18/%E8%A7%86%E9%A2%91%E6%8E%A8%E8%8D%90/</loc>
-    <lastmod>2018-11-18T15:56:32.684Z</lastmod>
+    <lastmod>2018-11-18T16:05:23.880Z</lastmod>
     <data>
         <display>
         <title>科幻视频推荐</title>
@@ -204,26 +204,6 @@
     
     
   <url>
-    <loc>http://qssq666.cn/2016/09/05/link/</loc>
-    <lastmod>2017-04-23T13:57:08.000Z</lastmod>
-    <data>
-        <display>
-        <title>点击标题链接跳转到指定网址</title>
-        <pubTime>2016-09-04T16:00:00.000Z</pubTime>
-        
-        <tag>链接</tag>
-         
-         
-           
-             
-              <breadCrumb title="测试" url="http://qssq666.cn/categories/%E6%B5%8B%E8%AF%95/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://qssq666.cn/2016/09/05/photoview/</loc>
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
     <data>
@@ -237,6 +217,26 @@
            
              
               <breadCrumb title="Photo" url="http://qssq666.cn/categories/Photo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://qssq666.cn/2016/09/05/link/</loc>
+    <lastmod>2017-04-23T13:57:08.000Z</lastmod>
+    <data>
+        <display>
+        <title>点击标题链接跳转到指定网址</title>
+        <pubTime>2016-09-04T16:00:00.000Z</pubTime>
+        
+        <tag>链接</tag>
+         
+         
+           
+             
+              <breadCrumb title="测试" url="http://qssq666.cn/categories/%E6%B5%8B%E8%AF%95/"/>
           
         </display>
     </data>
