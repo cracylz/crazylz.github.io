@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://qssq666.cn/2019/02/01/join_group/</loc>
+    
+    <lastmod>2019-02-01T14:09:30.298Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://qssq666.cn/update/robot_update.json</loc>
+    
+    <lastmod>2019-01-21T13:16:01.028Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://qssq666.cn/update/update.json</loc>
+    
+    <lastmod>2019-01-19T15:44:24.521Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://qssq666.cn/update/shang.html</loc>
     
     <lastmod>2018-12-03T12:19:46.909Z</lastmod>
@@ -96,20 +117,6 @@
     <loc>http://qssq666.cn/update/version_support.json</loc>
     
     <lastmod>2018-09-22T09:55:44.364Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://qssq666.cn/update/robot_update.json</loc>
-    
-    <lastmod>2018-09-22T09:39:30.882Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://qssq666.cn/update/update.json</loc>
-    
-    <lastmod>2018-09-22T09:37:30.202Z</lastmod>
     
   </url>
   
@@ -268,14 +275,14 @@
   </url>
   
   <url>
-    <loc>http://qssq666.cn/categories/index.html</loc>
+    <loc>http://qssq666.cn/bgsearch/index.html</loc>
     
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://qssq666.cn/bgsearch/index.html</loc>
+    <loc>http://qssq666.cn/categories/index.html</loc>
     
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
     
@@ -310,14 +317,14 @@
   </url>
   
   <url>
-    <loc>http://qssq666.cn/live/chat_service.json</loc>
+    <loc>http://qssq666.cn/other/history_qq.html</loc>
     
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://qssq666.cn/other/history_qq.html</loc>
+    <loc>http://qssq666.cn/live/chat_service.json</loc>
     
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
     

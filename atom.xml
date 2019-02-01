@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://qssq666.cn/"/>
-  <updated>2018-12-01T05:28:13.518Z</updated>
+  <updated>2019-02-01T14:09:30.298Z</updated>
   <id>http://qssq666.cn/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>上车群</title>
+    <link href="http://qssq666.cn/2019/02/01/join_group/"/>
+    <id>http://qssq666.cn/2019/02/01/join_group/</id>
+    <published>2019-01-31T16:00:00.000Z</published>
+    <updated>2019-02-01T14:09:30.298Z</updated>
+    
+    <content type="html"><![CDATA[<p>注意群规，和潜规则。</p><a id="more"></a><h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>有些东西不能讨论，一旦发现直接踢群，另外注意底线，最近小人有点多，所以记得及时举报在群里打广告的，不然被小人利用进行举报导致封群。<br>（腾讯也是是非不分的，又能力的朋友可以投诉腾讯，腾讯凭啥侵犯消费者权益，搞自动续费不退钱，又搞人工智能封群模式，凭什么花了钱进群，创建群不给任何理由就封了群？恐怕是找不到合适的理由直接耍流氓吧。）<br>所谓人在江湖身不由己，我也得用QQ，不能不低头，各位好之为之，</p><p>群号 226574208</p>]]></content>
+    
+    <summary type="html">
+    
+      加QQ群上车加QQ群上车加QQ群上车加QQ群上车加QQ群上车加QQ群上车
+    
+    </summary>
+    
+      <category term="上车" scheme="http://qssq666.cn/categories/%E4%B8%8A%E8%BD%A6/"/>
+    
+    
+      <category term="上车" scheme="http://qssq666.cn/tags/%E4%B8%8A%E8%BD%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>想打赏我的朋友记住我的支付宝分享码就行了 搜索码打开支付宝首页搜索“527086057”</title>
@@ -451,30 +473,6 @@
       <category term="CDN" scheme="http://qssq666.cn/tags/CDN/"/>
     
       <category term="七牛" scheme="http://qssq666.cn/tags/%E4%B8%83%E7%89%9B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>本人学习git心得</title>
-    <link href="http://qssq666.cn/2016/08/26/%E5%AD%A6%E4%B9%A0git%E5%BF%83%E5%BE%97/"/>
-    <id>http://qssq666.cn/2016/08/26/学习git心得/</id>
-    <published>2016-08-25T16:00:00.000Z</published>
-    <updated>2016-08-27T06:23:39.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>文为自己填继续学习git心得, 可能有我不对的地方望大神指出! 之前呢,一直用gui工具进行操作,不知其然更不知其所以然 只知道拉取 推送 下载,结果不能深入的了解,也不知道分支是可以干嘛的，现在明白了，有了分支功能，你可以在程序的1.0版本完成了,创建一个2.0分支 异步一步迭代，如果 要还原 切换到1.0 也是得心应手。</p><a id="more"></a><h6 id="从0开始从无到有"><a href="#从0开始从无到有" class="headerlink" title="从0开始从无到有"></a>从0开始从无到有</h6><blockquote><p>push推送 从本地推送到服务器叫推 ，是给别人 也就是不是本地 ，pull 翻译 叫拉 是拉向自己 从远程。 </p><p> 那么 安卓手机adb也有这个命令 谁是主呢?是电脑还是 手机，当然是手机了，电脑可以是其他任何设备，被操作的设备 也就是里面带有命令行的设备就是自己</p><p> 把手机的东西弄到电脑叫 adb push /sdcard/a.txt d:/ 记住了没有？</p><p>从服务器创建了一个仓库,那么默认地址应该叫类似<br> <a href="https://git.coding.net/qssq/test.git" target="_blank" rel="external">https://git.coding.net/qssq/test.git</a></p><h6 id="初始化目录进行学习"><a href="#初始化目录进行学习" class="headerlink" title="初始化目录进行学习"></a>初始化目录进行学习</h6><p>教程开始</p><p>我想在e盘根目录下的gitdemo文件夹测试 git用法</p><p>首先打开gitdemo文件夹</p><p>如果正常安装了git的话 右键就可以用了</p><p>没有右键也是可以自己配置右键菜单的</p><p>百度一下情迁教你右键菜单编程在任意文件夹学习这些</p><p>It技术调试git,java,.net 等各种。哈哈其实扯远了。就是右键管理员从此处运行</p><p>这样cd命令自动切换到了当前目录</p><p>有了它可以快速敲git 命令 java命令,c# 命令 情迁命令</p><p> 情迁QQ机器人的命令其实也是可以的，可惜webqq难倒腾了,一切都over了。</p></blockquote><ol><li><p>服务器创建了一个test的git仓库,打开gitdemo文件夹 右键git bash 命令:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone  https://git.coding.net/qssq/test.git test</div></pre></td></tr></table></figure></li><li><p>如果配置了cmd的话cmd也可以的,没有配置的win+r切换gitdemo目录即可。</p></li><li>这样就会在gitdemo下面创建一个test文件夹,然后打开文件夹. 或者 git bath切换到此目录<h6 id="最后的啰嗦"><a href="#最后的啰嗦" class="headerlink" title="最后的啰嗦"></a>最后的啰嗦</h6></li></ol><p>敲入命令 在test文件夹输入:<br>啰嗦一下,没有说错的话，远程默认有一个分支叫master,本地也是 所以不要问我为什么 是无法删除的</p><blockquote><p> 提示权限错误 deleting the current branch is denied</p><p> 例子: 默认远程主机名叫origin，所以是origin,没有为什么..</p><p> 首先开始玩创建本地分支 然后创建一个远程分支 然后 演示删除一个创建的远程分支 ，大致就能完全了解清楚了。</p></blockquote><p><strong><em>语法</em>:$ git push &lt;远程主机名&gt; &lt;本地分支名&gt;:&lt;远程分支名&gt;</strong><br>   也就是按英文意思叫 推送到服务器 把本地 推送远程 。 所以本地分支在前面 和pll相反。</p><h6 id="推送演示"><a href="#推送演示" class="headerlink" title="推送演示"></a>推送演示</h6><ul><li><strong>最常见的写法</strong><blockquote><p>推送当前本地分支master到远程分支master,如果远程分支maseter不存在则创建创建名肯定是参考本地分支名了[此处省略参数 为远程分致命] </p></blockquote></li></ul><pre><code>git push origin master</code></pre><blockquote><p>应该和 git push <a href="https://******git" target="_blank" rel="external">https://******git</a> master类似</p></blockquote><ul><li><p><strong>一个错误的推送命令</strong></p><pre><code>git push origin;#这语法是错误的，我还以为一直可以省略，甚至把origin理解 为是一个分支</code></pre><blockquote><p>提示: 可以从这里得到相关信息，这是项目目录的隐藏.git文件夹的config文件，origin对应的远程路径是http<em>**</em></p></blockquote></li></ul><pre><code>       [core]        repositoryformatversion = 0        filemode = false        bare = false        logallrefupdates = true        symlinks = false        ignorecase = false    [remote &quot;origin&quot;]        url = https://****.net/qssq/qssq.git        fetch = +refs/heads/*:refs/remotes/origin/*        pushurl = https://*****/qssq/qssq.git    [branch &quot;coding-pages&quot;]        remote = origin        merge = refs/heads/coding-pages<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">*   **推送本地分支test1到远程分支test2** </div><div class="line"> </div><div class="line">   参数完全 把本地分支test1推送到远程分支test2不存在则创建</div></pre></td></tr></table></figure>    git push origin test1:test2    <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">*   删除远程分支test2 </div><div class="line"> </div><div class="line">  此处省略了本地分支名参数  所以叫删除  和git push origin --delete test2类似 注意看清楚哦,有一个冒号 注意默认只有一个仓库是无法删除的，会提示权限问题。</div><div class="line">    ```bash</div><div class="line">    git push origin :test2;#[git push origin --delete test2 等同]</div></pre></td></tr></table></figure></code></pre><h6 id="拉取演示"><a href="#拉取演示" class="headerlink" title="拉取演示"></a>拉取演示</h6><p> 语法:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git pull &lt;远程主机名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;</div></pre></td></tr></table></figure></p><p> 从远程服务器别名叫origin 的 拉取远程分支master到本地的默认分支,命令如下:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git pull origin master</div></pre></td></tr></table></figure><p> 从远程服务器 别名(可以参考全局git配置文件) 拉取test1分支到本地的test1分支</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git pull origin test1:test1</div></pre></td></tr></table></figure><p>不想写了， 发现有些玩意不是我想的那样，本地删除了如果本地提交了为毛从服务器拉取都拉取不到，第二，为毛本地删除了 从服务器拉取没拉取到 然后切换一下分支再切换回来 文件才回来？？</p><p>  如果本地删除了一个文件并提交了commit 从服务器拉取的 那么 也是无法还原的， Already up-to-date.<br>git push origin </p><p>切换分支 不存在则报错</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkou test2</div></pre></td></tr></table></figure><p>创建分支test2并切换到test2分支 如果已存在分支将无法切换到此分支</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout -b test2</div></pre></td></tr></table></figure><p>创建分支 如果存在则会提示已存在</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git branch test</div></pre></td></tr></table></figure><p>查看所有本地分支 以及当前分支当前分支颜色有点不相同</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git branch</div></pre></td></tr></table></figure><p>查看所有分支</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git branch -a</div></pre></td></tr></table></figure><p>查看状态 是否有文件需要提交什么的信息 这里指的是commit 是否需要commit</p><pre><code>git status</code></pre><p>获取分支    </p><pre><code>git fetch origin</code></pre><p>查看提交的备注信息</p><pre><code>git log</code></pre><p>查看指定分支log</p><pre><code>git log source</code></pre><p>加入到版本控制</p><pre><code>git add 文件名git add 文件名1 文件名2 文件名3git add -A  //加入此目录下所有文件到版本控制//支持相对路径哦</code></pre><p>提交文件修改</p><pre><code>git commit -m &quot;备注信息&quot;</code></pre><p>吐槽<br>可以新建一个shell脚本保存起来直接放到根目录直接点击就可以提交了。</p><h4 id="TortoiseGit的弊端"><a href="#TortoiseGit的弊端" class="headerlink" title="TortoiseGit的弊端"></a>TortoiseGit的弊端</h4><p>大量文件无法右键菜单添加会卡死，然而你只需要里面的几个文件，那么这玩意真心浪费时间，没有命令行或者shell的快</p><p>下面是我的shell脚本 window</p><pre><code>set /p message=&quot;请输入提交说明:&quot;git add -A &amp;&amp; git commit -m  &quot;%message%&quot; git push --progress origin sourcepause</code></pre>]]></content>
-    
-    <summary type="html">
-    
-      本文为自己填继续学习git心得, 可能有我不对的地方望大神指出! 之前呢,一直用gui工具进行操作,不知其然更不知其所以然 只知道拉取 推送 下载,结果不能深入的了解,也不知道分支是可以干嘛的，现在明白了，有了分支功能，你可以在程序的1.0版本完成了,创建一个2.0分支 异步一步迭代，如果 要还原 切换到1.0 也是得心应手。
-    
-    </summary>
-    
-      <category term="版本控制" scheme="http://qssq666.cn/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
-    
-    
-      <category term="Git" scheme="http://qssq666.cn/tags/Git/"/>
-    
-      <category term="版本控制" scheme="http://qssq666.cn/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
     
   </entry>
   
