@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://qssq666.cn/"/>
-  <updated>2019-02-03T04:59:36.578Z</updated>
+  <updated>2019-02-04T05:08:24.734Z</updated>
   <id>http://qssq666.cn/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://qssq666.cn/2019/02/03/how_to_use/"/>
     <id>http://qssq666.cn/2019/02/03/how_to_use/</id>
     <published>2019-02-02T16:00:00.000Z</published>
-    <updated>2019-02-03T04:59:36.578Z</updated>
+    <updated>2019-02-04T05:08:24.734Z</updated>
     
-    <content type="html"><![CDATA[<p>怎么用怎么用怎么用怎么用怎么用怎么用怎么用怎么用怎么用怎么用怎么用怎么用怎么用</p><a id="more"></a><h3 id="教程开始"><a href="#教程开始" class="headerlink" title="教程开始"></a>教程开始</h3><p>这是针对没有root权限的手机的教程也就是新买来的任何手机一般都能用的教程。</p><ol><li>首先 下载Q++1.1.9或  这个到处都有，比如群文件，或者网盘。qssq.ys168.com qssq666.cn/update<br>然后安装到手机上。</li><li>下载正版官方QQ,版本在7.0-7.8.0之间兼容性最好好，高版本当然也是支持的,只是设置设置入口可能不会马上出现，</li></ol><ol><li>下载情迁优化版分身大师<br>链接：<a href="https://pan.baidu.com/s/1unoun2Xok72PRjhqAWEBlA" target="_blank" rel="external">https://pan.baidu.com/s/1unoun2Xok72PRjhqAWEBlA</a><br>提取码：eg87<br>运行后点击 把两个软件添加到分身中。<h4 id="操作一："><a href="#操作一：" class="headerlink" title="操作一："></a>操作一：</h4></li></ol><p>选择已经安装在手机上的Q++，然后打开分身中的Q++确保 关闭HOOK功能没有被勾选（勾选了就不会生效了，所以不能勾选的，有些朋友不看文字直接勾选了）</p><h4 id="操作二："><a href="#操作二：" class="headerlink" title="操作二："></a>操作二：</h4><p>把已经安装到手机上的QQ添加到分身中，<br>添加完毕后启动QQ，初次启动等待4-20秒之后进入就可以在设置界面就可以Q++入口啦（如果没有显示要等待半分钟的，低版本QQ无需等待，如低于QQ7.8.0的QQ<br>如果此操作不可行，可以尝试打开Q++ 下载Q++最新版。</p><p>祝你好运</p><h3 id="【注意事项】"><a href="#【注意事项】" class="headerlink" title="【注意事项】"></a>【注意事项】</h3><p>1、另外分身中的xposed插件只是方便看更新内容的，不能直接点击下载按钮下载，应该通过里面的网页找到下载链接进行下载，<br> ，这个只能给你看最新版的q++的，添加的话直接添加分身 就行了，选择本地的。<br>2、 机器人不要添加到分身里面，应该会导致重复n次回复，崩溃啥的。<br>3、安装了机器人导致崩溃，请先卸载吧</p><p>4、情迁优化版分身大师本身内置xposed,而且无法关闭，安装就是激活了，有些用户竟然又安装了一个xposed去激活q++，扯犊子</p><p>问题反馈</p><p><a href="https://github.com/qssq/feedback/issues/new?template=q--------.md" target="_blank" rel="external">https://github.com/qssq/feedback/issues/new?template=q--------.md</a><br>发红包可以教安装 叫解决问题，并可以得到最新版，钱少就算了。</p>]]></content>
+    <content type="html"><![CDATA[<p>怎么用怎么用怎么用怎么用怎么用怎么用怎么用怎么用怎么用怎么用怎么用怎么用怎么用</p><a id="more"></a><h3 id="教程开始"><a href="#教程开始" class="headerlink" title="教程开始"></a>教程开始</h3><p>这是针对没有root权限的手机的教程也就是新买来的任何手机一般都能用的教程,(android操作系统不支持，9.0建议用内置QQ1.3.4)。</p><ol><li>首先 下载Q++1.1.9或  这个到处都有，比如群文件，或者网盘。qssq.ys168.com qssq666.cn/update<br>然后安装到手机上。</li><li>下载正版官方QQ,版本在7.0-7.8.0之间兼容性最好好，高版本当然也是支持的,只是设置设置入口可能不会马上出现，</li></ol><ol><li>下载情迁优化版分身大师<br>链接：<a href="https://pan.baidu.com/s/1unoun2Xok72PRjhqAWEBlA" target="_blank" rel="external">https://pan.baidu.com/s/1unoun2Xok72PRjhqAWEBlA</a><br>提取码：eg87<br>运行后点击 把两个Q++和QQ软件添加到这个分身软件中。<h4 id="操作一："><a href="#操作一：" class="headerlink" title="操作一："></a>操作一：</h4></li></ol><p>选择已经安装在手机上的Q++，然后打开分身中的Q++确保 关闭HOOK功能没有被勾选（勾选了就不会生效了，所以不能勾选的，有些朋友不看文字直接勾选了）</p><h4 id="操作二："><a href="#操作二：" class="headerlink" title="操作二："></a>操作二：</h4><p>把已经安装到手机上的QQ添加到分身中，<br>添加完毕后启动QQ，初次启动等待4-20秒之后进入就可以在设置界面就可以Q++入口啦（如果没有显示要等待半分钟的，低版本QQ无需等待，如低于QQ7.8.0的QQ<br>如果此操作不可行，可以尝试打开Q++ 下载Q++最新版。</p><p>祝你好运</p><h3 id="【注意事项】"><a href="#【注意事项】" class="headerlink" title="【注意事项】"></a>【注意事项】</h3><p>1、另外分身中的xposed插件只是方便看更新内容的，不能直接点击下载按钮下载，应该通过里面的网页找到下载链接进行下载，<br> ，这个只能给你看最新版的q++的，添加的话直接添加分身 就行了，选择本地的。<br>2、 机器人不要添加到分身里面，应该会导致重复n次回复，崩溃啥的。<br>3、安装了机器人导致崩溃，请先卸载吧</p><p>4、情迁优化版分身大师本身内置xposed,而且无法关闭，安装就是激活了，有些用户竟然又安装了一个xposed去激活q++，扯犊子</p><p>问题反馈</p><p><a href="https://github.com/qssq/feedback/issues/new?template=q--------.md" target="_blank" rel="external">https://github.com/qssq/feedback/issues/new?template=q--------.md</a><br>发红包可以教安装 叫解决问题，并可以得到最新版，钱少就算了。</p>]]></content>
     
     <summary type="html">
     
@@ -105,28 +105,6 @@
   </entry>
   
   <entry>
-    <title>科幻视频推荐</title>
-    <link href="http://qssq666.cn/2018/11/18/%E8%A7%86%E9%A2%91%E6%8E%A8%E8%8D%90/"/>
-    <id>http://qssq666.cn/2018/11/18/视频推荐/</id>
-    <published>2018-11-17T16:00:00.000Z</published>
-    <updated>2018-11-18T16:43:51.875Z</updated>
-    
-    <content type="html"><![CDATA[<p> 我爱科学</p><a id="more"></a><p>vpn开启。。</p><p>马云达沃斯对话美国记者，全程高能，简直是一场火光四溅的攻防战<br>马云和外国记者谈全球化谈2018年搞的事情。牛逼了马云情商智商这么高么。<br><div class="video-container"><iframe src="//www.youtube.com/embed/3c66ez9dFYU" frameborder="0" allowfullscreen></iframe></div></p><p>中国小伙当雇佣兵</p><div class="video-container"><iframe src="//www.youtube.com/embed/6CFxlezzfh4" frameborder="0" allowfullscreen></iframe></div><p>中文讲好好宇宙<br><div class="video-container"><iframe src="//www.youtube.com/embed/w3O0j5YUaMg" frameborder="0" allowfullscreen></iframe></div><br>英文的………<br><div class="video-container"><iframe src="//www.youtube.com/embed/RMqtoEZBw4c" frameborder="0" allowfullscreen></iframe></div></p><p>黑洞<br> Earth Destroyed by a Black Hole (2014) dir. Peter Ninos - MAPS Film School<br><div class="video-container"><iframe src="//www.youtube.com/embed/za4szBXM1bQ" frameborder="0" allowfullscreen></iframe></div></p><div class="video-container"><iframe src="//www.youtube.com/embed/xyhZcEY5PCQ" frameborder="0" allowfullscreen></iframe></div><p>不错的表白视频 可惜我做不到 </p><embed src="http://www.56.com/n_v162_/c23_/11_/7_/wozoucenlie_/zhajm_120279416355x_/332000_/0_/28933546.swf" type="application/x-shockwave-flash" width="450" height="390"><p>时间旅行</p><iframe height="400" width="480" src="http://player.youku.com/embed/XNTY0MzMzMDQ0==" frameborder="0" allowfullscreen></iframe><p>万物理论</p><iframe height="400" width="480" src="http://player.youku.com/embed/XNzk5Nzc2Mzgw==" frameborder="0" allowfullscreen></iframe><p>超乎想像的宇宙 多重宇宙<br><iframe frameborder="0" width="480" height="400" src="http://v.qq.com/iframe/player.html?vid=v018697zmpk&tiny=0&auto=0" allowfullscreen></iframe></p><p>科幻大片解读：超立方体到底是什么？</p><iframe frameborder="0" width="480" height="400" src="http://v.qq.com/iframe/player.html?vid=b0172mp4aqz&tiny=0&auto=0" allowfullscreen></iframe>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt; 我爱科学&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="科幻" scheme="http://qssq666.cn/categories/%E7%A7%91%E5%B9%BB/"/>
-    
-    
-      <category term="科幻" scheme="http://qssq666.cn/tags/%E7%A7%91%E5%B9%BB/"/>
-    
-  </entry>
-  
-  <entry>
     <title>情迁QQ机器人的使用步骤，看完这篇文章你就明白了。</title>
     <link href="http://qssq666.cn/2018/11/18/about_use_robot/"/>
     <id>http://qssq666.cn/2018/11/18/about_use_robot/</id>
@@ -155,6 +133,28 @@
       <category term="分身大师" scheme="http://qssq666.cn/tags/%E5%88%86%E8%BA%AB%E5%A4%A7%E5%B8%88/"/>
     
       <category term="免Root" scheme="http://qssq666.cn/tags/%E5%85%8DRoot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>科幻视频推荐</title>
+    <link href="http://qssq666.cn/2018/11/18/%E8%A7%86%E9%A2%91%E6%8E%A8%E8%8D%90/"/>
+    <id>http://qssq666.cn/2018/11/18/视频推荐/</id>
+    <published>2018-11-17T16:00:00.000Z</published>
+    <updated>2018-11-18T16:43:51.875Z</updated>
+    
+    <content type="html"><![CDATA[<p> 我爱科学</p><a id="more"></a><p>vpn开启。。</p><p>马云达沃斯对话美国记者，全程高能，简直是一场火光四溅的攻防战<br>马云和外国记者谈全球化谈2018年搞的事情。牛逼了马云情商智商这么高么。<br><div class="video-container"><iframe src="//www.youtube.com/embed/3c66ez9dFYU" frameborder="0" allowfullscreen></iframe></div></p><p>中国小伙当雇佣兵</p><div class="video-container"><iframe src="//www.youtube.com/embed/6CFxlezzfh4" frameborder="0" allowfullscreen></iframe></div><p>中文讲好好宇宙<br><div class="video-container"><iframe src="//www.youtube.com/embed/w3O0j5YUaMg" frameborder="0" allowfullscreen></iframe></div><br>英文的………<br><div class="video-container"><iframe src="//www.youtube.com/embed/RMqtoEZBw4c" frameborder="0" allowfullscreen></iframe></div></p><p>黑洞<br> Earth Destroyed by a Black Hole (2014) dir. Peter Ninos - MAPS Film School<br><div class="video-container"><iframe src="//www.youtube.com/embed/za4szBXM1bQ" frameborder="0" allowfullscreen></iframe></div></p><div class="video-container"><iframe src="//www.youtube.com/embed/xyhZcEY5PCQ" frameborder="0" allowfullscreen></iframe></div><p>不错的表白视频 可惜我做不到 </p><embed src="http://www.56.com/n_v162_/c23_/11_/7_/wozoucenlie_/zhajm_120279416355x_/332000_/0_/28933546.swf" type="application/x-shockwave-flash" width="450" height="390"><p>时间旅行</p><iframe height="400" width="480" src="http://player.youku.com/embed/XNTY0MzMzMDQ0==" frameborder="0" allowfullscreen></iframe><p>万物理论</p><iframe height="400" width="480" src="http://player.youku.com/embed/XNzk5Nzc2Mzgw==" frameborder="0" allowfullscreen></iframe><p>超乎想像的宇宙 多重宇宙<br><iframe frameborder="0" width="480" height="400" src="http://v.qq.com/iframe/player.html?vid=v018697zmpk&tiny=0&auto=0" allowfullscreen></iframe></p><p>科幻大片解读：超立方体到底是什么？</p><iframe frameborder="0" width="480" height="400" src="http://v.qq.com/iframe/player.html?vid=b0172mp4aqz&tiny=0&auto=0" allowfullscreen></iframe>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt; 我爱科学&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="科幻" scheme="http://qssq666.cn/categories/%E7%A7%91%E5%B9%BB/"/>
+    
+    
+      <category term="科幻" scheme="http://qssq666.cn/tags/%E7%A7%91%E5%B9%BB/"/>
     
   </entry>
   
@@ -403,28 +403,6 @@
   </entry>
   
   <entry>
-    <title>照片欣赏</title>
-    <link href="http://qssq666.cn/2016/09/05/photoview/"/>
-    <id>http://qssq666.cn/2016/09/05/photoview/</id>
-    <published>2016-09-04T16:00:00.000Z</published>
-    <updated>2017-04-23T13:57:08.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>这里包含了几种风景图片</p><a id="more"></a><p><img src="http://ww1.sinaimg.cn/large/81b78497jw1emfgts2pt4j21hc0u0k1c.jpg" alt="Wallbase - dgnfly (wallbase.cc/wallpaper/1384450)"></p><p>非诚勿扰非诚勿扰您看到了更多的非常勿扰</p>]]></content>
-    
-    <summary type="html">
-    
-      测试图片类文章的显示。
-    
-    </summary>
-    
-      <category term="Photo" scheme="http://qssq666.cn/categories/Photo/"/>
-    
-    
-      <category term="consectetur" scheme="http://qssq666.cn/tags/consectetur/"/>
-    
-  </entry>
-  
-  <entry>
     <title>多级目录测试</title>
     <link href="http://qssq666.cn/2016/09/05/%E5%A4%9A%E7%BA%A7%E7%9B%AE%E5%BD%95%E6%B5%8B%E8%AF%95/"/>
     <id>http://qssq666.cn/2016/09/05/多级目录测试/</id>
@@ -469,6 +447,28 @@
     
     
       <category term="测试" scheme="http://qssq666.cn/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>照片欣赏</title>
+    <link href="http://qssq666.cn/2016/09/05/photoview/"/>
+    <id>http://qssq666.cn/2016/09/05/photoview/</id>
+    <published>2016-09-04T16:00:00.000Z</published>
+    <updated>2017-04-23T13:57:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>这里包含了几种风景图片</p><a id="more"></a><p><img src="http://ww1.sinaimg.cn/large/81b78497jw1emfgts2pt4j21hc0u0k1c.jpg" alt="Wallbase - dgnfly (wallbase.cc/wallpaper/1384450)"></p><p>非诚勿扰非诚勿扰您看到了更多的非常勿扰</p>]]></content>
+    
+    <summary type="html">
+    
+      测试图片类文章的显示。
+    
+    </summary>
+    
+      <category term="Photo" scheme="http://qssq666.cn/categories/Photo/"/>
+    
+    
+      <category term="consectetur" scheme="http://qssq666.cn/tags/consectetur/"/>
     
   </entry>
   
