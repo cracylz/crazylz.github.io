@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://qssq666.cn/2019/02/16/xposedx_use/</loc>
-    <lastmod>2019-02-15T17:12:15.446Z</lastmod>
+    <lastmod>2019-02-15T18:12:55.436Z</lastmod>
     <data>
         <display>
         <title>xposedX的使用</title>
@@ -304,26 +304,6 @@
     
     
   <url>
-    <loc>http://qssq666.cn/2016/09/05/photoview/</loc>
-    <lastmod>2017-04-23T13:57:08.000Z</lastmod>
-    <data>
-        <display>
-        <title>照片欣赏</title>
-        <pubTime>2016-09-04T16:00:00.000Z</pubTime>
-        
-        <tag>consectetur</tag>
-         
-         
-           
-             
-              <breadCrumb title="Photo" url="http://qssq666.cn/categories/Photo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://qssq666.cn/2016/09/05/link/</loc>
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
     <data>
@@ -337,6 +317,26 @@
            
              
               <breadCrumb title="测试" url="http://qssq666.cn/categories/%E6%B5%8B%E8%AF%95/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://qssq666.cn/2016/09/05/photoview/</loc>
+    <lastmod>2017-04-23T13:57:08.000Z</lastmod>
+    <data>
+        <display>
+        <title>照片欣赏</title>
+        <pubTime>2016-09-04T16:00:00.000Z</pubTime>
+        
+        <tag>consectetur</tag>
+         
+         
+           
+             
+              <breadCrumb title="Photo" url="http://qssq666.cn/categories/Photo/"/>
           
         </display>
     </data>
