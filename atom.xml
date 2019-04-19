@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://qssq666.cn/"/>
-  <updated>2019-02-23T10:24:12.555Z</updated>
+  <updated>2019-04-19T09:56:16.934Z</updated>
   <id>http://qssq666.cn/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PuppetManager、全新的免Root框架，非虚拟环境(类似内置)</title>
+    <link href="http://qssq666.cn/2019/04/19/puppet_publish/"/>
+    <id>http://qssq666.cn/2019/04/19/puppet_publish/</id>
+    <published>2019-04-18T16:00:00.000Z</published>
+    <updated>2019-04-19T09:56:16.934Z</updated>
+    
+    <content type="html"><![CDATA[<p>。。。。。。。。。。。。。。。。。。。。。。。</p><a id="more"></a><h3 id="这是什么鬼"><a href="#这是什么鬼" class="headerlink" title="这是什么鬼?"></a>这是什么鬼?</h3><p>还记得我以前发布的内置qq吗？只需要卸载官方qq就能使用了，而这个除了需要卸载之外，还需要安装xposed插件q++和puttet管理器，以及被感染(修改app)的qq(也可以算是内置qq)<br>优点:更新一个小功能不再需要更新内置了，只需要更新q++然后重启就行了。</p><h3 id="起名的由来"><a href="#起名的由来" class="headerlink" title="起名的由来:"></a>起名的由来:</h3><p>不需要root就能实现加载xposed插件，但是需要修改apk,那么怎么起名呢?</p><p>我想了一下傀儡比较合适。<br>PuppetManager 傀儡管理器</p><p>要被感染才能成为傀儡，也就是修改apk才能成为傀儡<br>也就是把你的qq卸载掉，安装修改版qq.</p><p>傀儡管理器app是统一管理感染的傀儡app应用以及管理xposed插件，只有被感染的软件之后才能被控制，被感染的应用汇在傀儡管理器-&gt;已被感染的宿主。</p><h3 id="功能"><a href="#功能" class="headerlink" title="功能:"></a>功能:</h3><p>安装被感染的傀儡软件 如 QQ,微信(一定是被修改之后的软件)</p><p>安装傀儡管理器。<br>安装控制傀儡的xposed插件(q++需要1.3.0以及以上方可支持)。</p><p>通过傀儡管理器设置开关的打开关闭，从而控制傀儡能否加载插件。。</p><p>傀儡管理器能够展示所有感染的傀儡，也能够展示xposed模块应用。</p><p>界面:</p><p><img src="https://upload-images.jianshu.io/upload_images/2815884-dec22722940c789b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="aaa"></p><p><img src="https://upload-images.jianshu.io/upload_images/2815884-b236b84d9cc203f5.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="aaa"></p><p><img src="https://upload-images.jianshu.io/upload_images/2815884-21a878aa3e04a415.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="aa"></p><p><img src="https://upload-images.jianshu.io/upload_images/2815884-2ad9461b90c73d3e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="aa"><br><img src="https://upload-images.jianshu.io/upload_images/2815884-6194f28e4db9dcce.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="x"></p><p>说明:<br>我之前发布的xposedX 是虚拟框架支持9.0兼容性差。<br>之前发布的分身大师修改版也是虚拟框架，不支持9.0兼容性差。<br>这个支持5.0以上也支持9.0 稳定性和修改app差不多，但是签名检测这方面的我做了一些处理。</p><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>链接：<a href="https://pan.baidu.com/s/1fg4ZvZDdR5mri8vGVtvc6g" target="_blank" rel="external">https://pan.baidu.com/s/1fg4ZvZDdR5mri8vGVtvc6g</a><br>提取码：13ry </p><h3 id="被感染的傀儡软件目前网盘有如下。"><a href="#被感染的傀儡软件目前网盘有如下。" class="headerlink" title="被感染的傀儡软件目前网盘有如下。"></a>被感染的傀儡软件目前网盘有如下。</h3><p><img src="https://upload-images.jianshu.io/upload_images/2815884-38233d70c186c365.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.pnxxx"></p><h3 id="使用注意事项"><a href="#使用注意事项" class="headerlink" title="使用注意事项:"></a>使用注意事项:</h3><p>只支持5.0以及以上手机，<br>新版本qq/微信 (被感染的软件称之为傀儡)可能不会马上获得存储权限，启动后通常会进行申请，请选择同意。<br>第一次安装给与存储权限需要重启，因为保存方式是在存储设备，或者不需要打开软件，先进入应用详情给与存储权限。</p><p>如果激活q++闪退，请先关闭q++.等待最新版的q++升级吧。<br>无法打开建议先全局禁用，然后依次禁用开关，方便我能排查问题。到底是因为xposed插件导致还是，傀儡出现了毛病。</p><p>网盘中有一个被感染的应用<code>puppet_app_test_demo.apk</code>，以及一个把所有文本修改为-的xposed插件<code>xposed_plugin___char.apk</code>，打开模块管理器里面勾选激活之后再启动 这个被感染的应用，第一次会申请权限，这个时候需要重启。再次打开应用所有字符变成了-</p><h3 id="不要"><a href="#不要" class="headerlink" title="不要"></a>不要</h3><p>各位可以在不要root的环境进行测试，对于本身已root手机 环境可能会出现更加不稳定的情况。<br>不要在模拟器上运行。</p><h3 id="要"><a href="#要" class="headerlink" title="要"></a>要</h3><p>需要卸载官方软件，如安装傀儡qq需要卸载之前的QQ。</p><h3 id="黑屏问题"><a href="#黑屏问题" class="headerlink" title="黑屏问题"></a>黑屏问题</h3><p>有用户反馈黑屏，目前没有定位到原因，我只能说建议先关闭所有xposed模块然后再打开qq看看是否黑屏，特别是把xposed demo禁用或者卸载，别没事乱安装哈。这个只是测试一个插件能否正常工作的。</p><h3 id="乱码问题"><a href="#乱码问题" class="headerlink" title="乱码问题"></a>乱码问题</h3><p>有的用户不知道xposed demo 是干嘛的，其实这个demo是一个病毒app激活后会把所有傀儡应用文本修改为-,所以有的人打开qq后发现全是-,懵逼。。</p><h3 id="使用q-注意事项"><a href="#使用q-注意事项" class="headerlink" title="使用q++注意事项"></a>使用q++注意事项</h3><p>必须使用1.3.0以上,如果出现一会儿就闪退，建议先关闭q++然后启动qq先登录账号 登录完毕之后再打开q++，然后再重启qq.</p><h3 id="安全风险"><a href="#安全风险" class="headerlink" title="安全风险"></a>安全风险</h3><p>理论上不存在风险，各位可以帮我测试一下是否存在问题，个人没测试出问题。</p><h3 id="文件为什么这么大"><a href="#文件为什么这么大" class="headerlink" title="文件为什么这么大?"></a>文件为什么这么大?</h3><p>这个是因为破解签名用到的技术所需要的，不过我还提供了另外一个方法，这个方法之后再进行处理，现在只为了让用户能够使用，之后再解决文件过大问题。</p><h3 id="怎么感染软件？"><a href="#怎么感染软件？" class="headerlink" title="怎么感染软件？"></a>怎么感染软件？</h3><p>怎么感染？就是从网盘下载被感染的软件，暂不支持手机端直接感染。</p><h3 id="为什么感染软件那么少？"><a href="#为什么感染软件那么少？" class="headerlink" title="为什么感染软件那么少？"></a>为什么感染软件那么少？</h3><p>我的网络上传速度只有100kb/s苦逼的很啊 ，qq上传了几个小时，wx还没上传完成呢。</p><h3 id="如何反馈问题？"><a href="#如何反馈问题？" class="headerlink" title="如何反馈问题？"></a>如何反馈问题？</h3><p>打开q++最新版 1.3.1 截图完整给我，如果显示的未激活说明你的qq并没有被感染。如果现实puttet说明你的qq成功感染</p><h3 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h3><p>安装v++<br>安装q++<br>安装傀儡qq（如1010的7.9.9的,需要卸载官方的）<br>安装puttet管理器<br>首先使用puppet管理器勾选要使用的模块。<br>打开qq(第一次给与存储权限可能需要重启或会推迟一会儿才会在设置界面看到入口)<br>q++打开后会显示运行的环境是puppet环境。</p>]]></content>
+    
+    <summary type="html">
+    
+      介绍PuppetManger的概念，来龙去脉，以及告知应该如何下载！
+    
+    </summary>
+    
+      <category term="上车" scheme="http://qssq666.cn/categories/%E4%B8%8A%E8%BD%A6/"/>
+    
+    
+      <category term="上车" scheme="http://qssq666.cn/tags/%E4%B8%8A%E8%BD%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>Q++/V++下载地址推荐</title>
@@ -443,28 +465,6 @@
     
     
       <category term="视频" scheme="http://qssq666.cn/tags/%E8%A7%86%E9%A2%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>照片欣赏</title>
-    <link href="http://qssq666.cn/2016/09/05/photoview/"/>
-    <id>http://qssq666.cn/2016/09/05/photoview/</id>
-    <published>2016-09-04T16:00:00.000Z</published>
-    <updated>2017-04-23T13:57:08.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>这里包含了几种风景图片</p><a id="more"></a><p><img src="http://ww1.sinaimg.cn/large/81b78497jw1emfgts2pt4j21hc0u0k1c.jpg" alt="Wallbase - dgnfly (wallbase.cc/wallpaper/1384450)"></p><p>非诚勿扰非诚勿扰您看到了更多的非常勿扰</p>]]></content>
-    
-    <summary type="html">
-    
-      测试图片类文章的显示。
-    
-    </summary>
-    
-      <category term="Photo" scheme="http://qssq666.cn/categories/Photo/"/>
-    
-    
-      <category term="consectetur" scheme="http://qssq666.cn/tags/consectetur/"/>
     
   </entry>
   
