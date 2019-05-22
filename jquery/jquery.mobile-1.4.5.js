@@ -153,11 +153,11 @@ $.extend( $.expr[ ":" ], {
 				return !!$.data( elem, dataName );
 			};
 		}) :
-		// support: jQuery <1.8 3="" function(="" elem,="" i,="" match="" )="" {="" return="" !!$.data(="" match[="" ]="" );="" },="" focusable:="" element="" focusable(="" element,="" !isnan(="" $.attr(="" "tabindex"="" tabbable:="" var="" tabindex="$.attr(" ),="" istabindexnan="isNaN(" (="" ||="">= 0 ) && focusable( element, !isTabIndexNaN );
+		// support: jQuery <1.8 3 function( elem, i, match ) { return !!$.data( match[ ] ); }, focusable: element focusable( element, !isnan( $.attr( "tabindex" tabbable: var tabindex="$.attr(" ), istabindexnan="isNaN(" ( ||>= 0 ) && focusable( element, !isTabIndexNaN );
 	}
 });
 
-// support: jQuery <1.8 if="" (="" !$(="" "<a="">" ).outerWidth( 1 ).jquery ) {
+// support: jQuery <1.8 if ( !$( "<a>" ).outerWidth( 1 ).jquery ) {
 	$.each( [ "Width", "Height" ], function( i, name ) {
 		var side = name === "Width" ? [ "Left", "Right" ] : [ "Top", "Bottom" ],
 			type = name.toLowerCase(),
@@ -203,7 +203,7 @@ $.extend( $.expr[ ":" ], {
 	});
 }
 
-// support: jQuery <1.8 if="" (="" !$.fn.addback="" )="" {="" $.fn.addback="function(" selector="" return="" this.add(="" null="" ?="" this.prevobject="" :="" this.prevobject.filter(="" );="" };="" }="" support:="" jquery="" 1.6.1,="" 1.6.2="" (http:="" bugs.jquery.com="" ticket="" 9413)="" $(="" "<a="">" ).data( "a-b", "a" ).removeData( "a-b" ).data( "a-b" ) ) {
+// support: jQuery <1.8 if ( !$.fn.addback ) { $.fn.addback="function(" selector return this.add( null ? this.prevobject : this.prevobject.filter( ); }; } support: jquery 1.6.1, 1.6.2 (http: bugs.jquery.com ticket 9413) $( "<a>" ).data( "a-b", "a" ).removeData( "a-b" ).data( "a-b" ) ) {
 	$.fn.removeData = (function( removeData ) {
 		return function( key ) {
 			if ( arguments.length ) {
@@ -990,7 +990,7 @@ $.Widget.prototype = {
 		this.element
 			.unbind( this.eventNamespace )
 			.removeData( this.widgetFullName )
-			// support: jquery <1.6.3 0="" 9413="" http:="" bugs.jquery.com="" ticket="" .removedata(="" $.camelcase(="" this.widgetfullname="" )="" );="" this.widget()="" .unbind(="" this.eventnamespace="" .removeattr(="" "aria-disabled"="" .removeclass(="" +="" "-disabled="" "="" "ui-state-disabled"="" clean="" up="" events="" and="" states="" this.bindings.unbind(="" this.hoverable.removeclass(="" "ui-state-hover"="" this.focusable.removeclass(="" "ui-state-focus"="" },="" _destroy:="" $.noop,="" widget:="" function()="" {="" return="" this.element;="" option:="" function(="" key,="" value="" var="" options="key," parts,="" curoption,="" i;="" if="" (="" arguments.length="==" don't="" a="" reference="" to="" the="" internal="" hash="" $.widget.extend(="" {},="" this.options="" }="" typeof="" key="==" "string"="" handle="" nested="" keys,="" e.g.,="" "foo.bar"=""> { foo: { bar: ___ } }
+			// support: jquery <1.6.3 0 9413 http: bugs.jquery.com ticket .removedata( $.camelcase( this.widgetfullname ) ); this.widget() .unbind( this.eventnamespace .removeattr( "aria-disabled" .removeclass( + "-disabled " "ui-state-disabled" clean up events and states this.bindings.unbind( this.hoverable.removeclass( "ui-state-hover" this.focusable.removeclass( "ui-state-focus" }, _destroy: $.noop, widget: function() { return this.element; option: function( key, value var options="key," parts, curoption, i; if ( arguments.length="==" don't a reference to the internal hash $.widget.extend( {}, this.options } typeof key="==" "string" handle nested keys, e.g., "foo.bar"> { foo: { bar: ___ } }
 			options = {};
 			parts = key.split( "." );
 			key = parts.shift();
@@ -1614,7 +1614,7 @@ $.mobile.widget = $.Widget;
   //    all bound window.onhashchange event handlers will be triggered. This
   //    is a shortcut for the more verbose
   //    jQuery(window).trigger( 'hashchange' ). These forms are described in
-  //    the <hashchange event=""> section.
+  //    the <hashchange event> section.
   // 
   // Returns:
   // 
@@ -1628,7 +1628,7 @@ $.mobile.widget = $.Widget;
   
   // Property: jQuery.fn.hashchange.delay
   // 
-  // The numeric interval (in milliseconds) at which the <hashchange event="">
+  // The numeric interval (in milliseconds) at which the <hashchange event>
   // polling loop executes. Defaults to 50.
   
   // Property: jQuery.fn.hashchange.domain
@@ -1885,7 +1885,7 @@ $.mobile.widget = $.Widget;
 		var bool,
 			docElem = doc.documentElement,
 			refNode = docElem.firstElementChild || docElem.firstChild,
-			// fakeBody required for <ff4 when="" executed="" in="" <head="">
+			// fakeBody required for <ff4 when executed in <head>
 			fakeBody = doc.createElement( "body" ),
 			div = doc.createElement( "div" );
 
@@ -1896,7 +1896,7 @@ $.mobile.widget = $.Widget;
 
 		return function(q){
 
-			div.innerHTML = "&shy;<style media="\""" +="" q="" "\"=""> #mq-test-1 { width: 42px; }</style>";
+			div.innerHTML = "&shy;<style media="\""" + q "\"> #mq-test-1 { width: 42px; }</style>";
 
 			docElem.insertBefore( fakeBody, refNode );
 			bool = div.offsetWidth === 42;
@@ -4919,8 +4919,8 @@ $.widget( "mobile.page", {
 
 			//if page elem couldn't be found, create one and insert the body element's contents
 			if ( !page.length ) {
-				page = $( "<div data-"="" +="" this._getns()="" "role="page">" +
-					( html.split( /<\ ?body[^="">]*>/gmi )[1] || "" ) +
+				page = $( "<div data-" + this._getns() "role="page">" +
+					( html.split( /<\ ?body[^>]*>/gmi )[1] || "" ) +
 					"</\></div>" );
 			}
 
@@ -4935,7 +4935,7 @@ $.widget( "mobile.page", {
 
 		_setLoadedTitle: function( page, html ) {
 			//page title regexp
-			var newPageTitle = html.match( /<title[^>]*>([^<]*) )="" &&="" regexp.$1;="" if="" (="" newpagetitle="" !page.jqmdata("title")="" {="" "<div="">" + newPageTitle + "</]*)></title[^></=></a></body></ff4></iframe></jquery.fn.hashchange></jquery.fn.hashchange.delay></jquery.fn.hashchange.domain></jquery.fn.hashchange.src></hashchange></hashchange></jquery.fn.hashchange.src></jquery.fn.hashchange.domain></jquery.fn.hashchange.delay></1.6.3></div>" ).text();
+			var newPageTitle = html.match( /<title[^>]*>([^<]*) ) && regexp.$1; if ( newpagetitle !page.jqmdata("title") { "<div>" + newPageTitle + "</]*)></title[^></=></a></body></ff4></iframe></jquery.fn.hashchange></jquery.fn.hashchange.delay></jquery.fn.hashchange.domain></jquery.fn.hashchange.src></hashchange></hashchange></jquery.fn.hashchange.src></jquery.fn.hashchange.domain></jquery.fn.hashchange.delay></1.6.3></div>" ).text();
 				page.jqmData( "title", newPageTitle );
 			}
 		},
@@ -6876,7 +6876,7 @@ $.widget( "mobile.collapsible", {
 			( contentThemeClass ? "ui-collapsible-themed-content " : "" ) );
 		ui.originalHeading = elem.children( this.options.heading ).first(),
 		ui.content = elem
-			.wrapInner( "<div "="" +="" "class="ui-collapsible-content " +
+			.wrapInner( "<div " + "class="ui-collapsible-content " +
 				contentThemeClass + ""></div>" )
 			.children( ".ui-collapsible-content" ),
 		ui.heading = ui.originalHeading;
@@ -7297,7 +7297,7 @@ $.fn.grid = function( options ) {
 			letter;
 
 			if ( !grid ) {
-				if ( $kids.length <= 5="" )="" {="" for="" (="" letter="" in="" gridcols="" if="" gridcols[="" ]="==" $kids.length="" grid="letter;" }="" else="" ;="" $this.addclass(="" "ui-grid-duo"="" );="" iterator="gridCols[grid];" "ui-grid-"="" +="" $kids.filter(="" ":nth-child("="" "n+1)"="" ).addclass(="" "ui-block-a"=""> 1 ) {
+				if ( $kids.length <= 5 ) { for ( letter in gridcols if gridcols[ ]="==" $kids.length grid="letter;" } else ; $this.addclass( "ui-grid-duo" ); iterator="gridCols[grid];" "ui-grid-" + $kids.filter( ":nth-child(" "n+1)" ).addclass( "ui-block-a"> 1 ) {
 			$kids.filter( ":nth-child(" + iterator + "n+2)" ).addClass( "ui-block-b" );
 		}
 		if ( iterator > 2 ) {
@@ -7530,7 +7530,7 @@ $.widget( "mobile.listview", $.extend( {
 					itemClass = "ui-li-divider ui-bar-" + ( dividerTheme ? dividerTheme : "inherit" );
 
 					item.attr( "role", "heading" );
-				} else if ( a.length <= 0="" 1="" 10="" )="" {="" itemclass="ui-li-static ui-body-" +="" (="" itemtheme="" ?="" :="" "inherit"="" );="" }="" if="" ol="" &&="" value="" newstartcount="parseInt(" ,="" -="" 1;="" item.css(="" "counter-reset",="" "listnumbering="" "="" instead="" of="" setting="" item="" class="" directly="" on="" the="" list="" at="" this="" point="" in="" time,="" push="" into="" a="" dictionary="" that="" tells="" us="" what="" to="" set="" it="" so="" we="" can="" do="" after="" processing="" loop is="" finished.="" !itemclassdict[="" ]="" itemclassdict[="" ].push(="" item[="" appropriate="" listview="" classes="" each="" item.="" main="" reason="" didn't="" for-loop="" above="" because="" eliminate="" per-item="" function="" overhead="" by="" calling="" addclass()="" and="" children()="" once="" or="" twice="" afterwards.="" give="" significant="" boost="" platforms="" like="" wp7.5.="" for="" itemclassdict="" $(="" ).addclass(="" countbubbles.each(="" function()="" ).closest(="" "li"="" "ui-li-has-count"="" });="" countthemeclass="" countbubbles.not(="" "[class*="ui-body-" ]"="" deprecated="" 1.4.="" from="" 1.5="" you="" have="" add="" ui-li-has-thumb="" ui-li-has-icon="" li.="" this._addthumbclasses(="" li="" li.find(="" ".ui-btn"="" this._afterlistviewrefresh();="" this._addfirstlastclasses(="" li,="" this._getvisibles(="" create="" ),="" },="" $.mobile.behaviors.addfirstlastclasses="" })(="" jquery="" (function(="" $,="" undefined="" defaultautodividersselector(="" elt="" look="" text="" given="" element="" var="" elt.text()="" ||="" null;="" !text="" return="" divider="" (first="" uppercased="" letter)="" 0,="" ).touppercase();="" text;="" $.widget(="" "mobile.listview",="" $.mobile.listview,="" options:="" autodividers:="" false,="" autodividersselector:="" defaultautodividersselector="" _beforelistviewrefresh:="" this.options.autodividers="" this._replacedividers();="" this._superapply(="" arguments="" _replacedividers:="" i,="" lis,="" dividertext,="" lastdividertext="null," divider;="" list.children(="" "li:jqmdata(role="list-divider" )"="" ).remove();="" lis="list.children(" i="0;" <="" lis.length="" ;="" i++="" ];="" dividertext="this.options.autodividersSelector(" !="=" divider.appendchild(="" document.createtextnode(="" divider.setattribute(="" "data-"="" $.mobile.ns="" "role",="" "list-divider"="" li.parentnode.insertbefore(="" divider,="" rdivider="/(^|\s)ui-li-divider($|\s)/," rhidden="/(^|\s)ui-screen-hidden($|\s)/;" hidedividers:="" false="" _afterlistviewrefresh:="" items,="" idx,="" item,="" hidedivider="true;" this.options.hidedividers="" items="this._getChildrenByTagName(" this.element[="" ],="" "li",="" idx="items.length"> -1 ; idx-- ) {
+				} else if ( a.length <= 0 1 10 ) { itemclass="ui-li-static ui-body-" + ( itemtheme ? : "inherit" ); } if ol && value newstartcount="parseInt(" , - 1; item.css( "counter-reset", "listnumbering " instead of setting item class directly on the list at this point in time, push into a dictionary that tells us what to set it so we can do after processing loop is finished. !itemclassdict[ ] itemclassdict[ ].push( item[ appropriate listview classes each item. main reason didn't for-loop above because eliminate per-item function overhead by calling addclass() and children() once or twice afterwards. give significant boost platforms like wp7.5. for itemclassdict $( ).addclass( countbubbles.each( function() ).closest( "li" "ui-li-has-count" }); countthemeclass countbubbles.not( "[class*="ui-body-" ]" deprecated 1.4. from 1.5 you have add ui-li-has-thumb ui-li-has-icon li. this._addthumbclasses( li li.find( ".ui-btn" this._afterlistviewrefresh(); this._addfirstlastclasses( li, this._getvisibles( create ), }, $.mobile.behaviors.addfirstlastclasses })( jquery (function( $, undefined defaultautodividersselector( elt look text given element var elt.text() || null; !text return divider (first uppercased letter) 0, ).touppercase(); text; $.widget( "mobile.listview", $.mobile.listview, options: autodividers: false, autodividersselector: defaultautodividersselector _beforelistviewrefresh: this.options.autodividers this._replacedividers(); this._superapply( arguments _replacedividers: i, lis, dividertext, lastdividertext="null," divider; list.children( "li:jqmdata(role="list-divider" )" ).remove(); lis="list.children(" i="0;" < lis.length ; i++ ]; dividertext="this.options.autodividersSelector(" !="=" divider.appendchild( document.createtextnode( divider.setattribute( "data-" $.mobile.ns "role", "list-divider" li.parentnode.insertbefore( divider, rdivider="/(^|\s)ui-li-divider($|\s)/," rhidden="/(^|\s)ui-screen-hidden($|\s)/;" hidedividers: false _afterlistviewrefresh: items, idx, item, hidedivider="true;" this.options.hidedividers items="this._getChildrenByTagName(" this.element[ ], "li", idx="items.length"> -1 ; idx-- ) {
 				item = items[ idx ];
 				if ( item.className.match( rdivider ) ) {
 					if ( hideDivider ) {
@@ -9491,7 +9491,7 @@ $.widget( "mobile.flipswitch", $.extend({
 		},
 
 		clearButton: function() {
-			return $( "<a href="#" tabindex="-1" aria-hidden="true" "="" +="" "class="ui-input-clear ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">" +
+			return $( "<a href="#" tabindex="-1" aria-hidden="true" " + "class="ui-input-clear ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">" +
 				"</a>" )
 					.attr( "title", this.options.clearBtnText )
 					.text( this.options.clearBtnText );
@@ -11217,17 +11217,17 @@ $.widget( "mobile.selectmenu", $.mobile.selectmenu, {
 		overlayThemeAttr = overlayTheme ? ( " data-" + $.mobile.ns +
 			"overlay-theme='" + overlayTheme + "'" ) : "";
 		dividerThemeAttr = ( o.dividerTheme && isMultiple ) ? ( " data-" + $.mobile.ns + "divider-theme='" + o.dividerTheme + "'" ) : "";
-		menuPage = $( "<div data-"="" +="" $.mobile.ns="" "role="dialog" class="ui-selectmenu" id="" + dialogId + "" "="" themeattr="" overlaythemeattr="">" +
-			"<div data-"="" +="" $.mobile.ns="" "role="header">" +
+		menuPage = $( "<div data-" + $.mobile.ns "role="dialog" class="ui-selectmenu" id="" + dialogId + "" " themeattr overlaythemeattr>" +
+			"<div data-" + $.mobile.ns "role="header">" +
 			"<div class="ui-title"></div>"+
 			"</div>"+
-			"<div data-"="" +="" $.mobile.ns="" "role="content"></div>"+
+			"<div data-" + $.mobile.ns "role="content"></div>"+
 			"</div>" );
-		listbox = $( "<div" +="" themeattr="" overlaythemeattr="" "="" id="" + popupId +
+		listbox = $( "<div" + themeattr overlaythemeattr " id="" + popupId +
 				"" class="ui-selectmenu"></div"></span></div>" )
 			.insertAfter( this.select )
 			.popup();
-		list = $( "<ul class="ui-selectmenu-list" id="" + menuId + "" role="listbox" aria-labelledby="" + this.buttonId + "" "="" +="" themeattr="" dividerthemeattr=""></ul>" ).appendTo( listbox );
+		list = $( "<ul class="ui-selectmenu-list" id="" + menuId + "" role="listbox" aria-labelledby="" + this.buttonId + "" " + themeattr dividerthemeattr></ul>" ).appendTo( listbox );
 		header = $( "<div class="ui-header ui-bar-" + ( o.theme ? o.theme : "inherit" ) + ""></div>" ).prependTo( listbox );
 		headerTitle = $( "<h1 class="ui-title"></h1>" ).appendTo( header );
 

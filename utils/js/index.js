@@ -466,4 +466,4 @@ jQuery(document).keypress(function (e) {
   var key = String.fromCharCode(charCode);
 
   // key integers & decimal
-  if ( charCode >= 46 && charCode <= 47="" 58="" &&="" charcode="" !="=" )="" {="" if="" (="" !is_submission="" is_a="" set_a(key);="" }="" else="" set_b(key);="" soft_sub="" reset_calc();="" key="" operators="">= 42 && charCode </=>
+  if ( charCode >= 46 && charCode <= 47 58 && charcode !="=" ) { if ( !is_submission is_a set_a(key); } else set_b(key); soft_sub reset_calc(); key operators>= 42 && charCode </=>

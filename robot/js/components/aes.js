@@ -130,7 +130,7 @@ code.google.com/p/crypto-js/wiki/License
                     var t = keySchedule[ksRow - 4];
                 }
 
-                if (invKsRow < 4 || ksRow <= 4)="" {="" invkeyschedule[invksrow]="t;" }="" else="">>> 24]] ^ INV_SUB_MIX_1[SBOX[(t >>> 16) & 0xff]] ^
+                if (invKsRow < 4 || ksRow <= 4) { invkeyschedule[invksrow]="t;" } else>>> 24]] ^ INV_SUB_MIX_1[SBOX[(t >>> 16) & 0xff]] ^
                                                INV_SUB_MIX_2[SBOX[(t >>> 8) & 0xff]] ^ INV_SUB_MIX_3[SBOX[t & 0xff]];
                 }
             }

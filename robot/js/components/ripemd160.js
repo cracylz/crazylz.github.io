@@ -96,7 +96,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
             var t;
             for (var i = 0; i < 80; i += 1) {
                 t = (al +  M[offset+zl[i]])|0;
-                if (i<16){ t="" +="f1(bl,cl,dl)" hl[0];="" }="" else="" if="" (i<32)="" {="" hl[1];="" (i<48)="" hl[2];="" (i<64)="" hl[3];="" (i<80)="" hl[4];="" al="el;" el="dl;" dl="rotl(cl," 10);="" cl="bl;" bl="t;" m[offset+zr[i]])|0;="" (i<16){="" hr[0];="" hr[1];="" hr[2];="" hr[3];="" hr[4];="" ;="" ar="er;" er="dr;" dr="rotl(cr," cr="br;" br="t;" intermediate="" hash="" value="" dr)|0;="" h[1]="(H[2]" er)|0;="" h[2]="(H[3]" ar)|0;="" h[3]="(H[4]" br)|0;="" h[4]="(H[0]" cr)|0;="" h[0]="t;" },="" _dofinalize:="" function="" ()="" shortcuts="" var="" data="this._data;" datawords="data.words;" nbitstotal="this._nDataBytes" *="" 8;="" nbitsleft="data.sigBytes" add="" padding="" datawords[nbitsleft="">>> 5] |= 0x80 << (24 - nBitsLeft % 32);
+                if (i<16){ t +="f1(bl,cl,dl)" hl[0]; } else if (i<32) { hl[1]; (i<48) hl[2]; (i<64) hl[3]; (i<80) hl[4]; al="el;" el="dl;" dl="rotl(cl," 10); cl="bl;" bl="t;" m[offset+zr[i]])|0; (i<16){ hr[0]; hr[1]; hr[2]; hr[3]; hr[4]; ; ar="er;" er="dr;" dr="rotl(cr," cr="br;" br="t;" intermediate hash value dr)|0; h[1]="(H[2]" er)|0; h[2]="(H[3]" ar)|0; h[3]="(H[4]" br)|0; h[4]="(H[0]" cr)|0; h[0]="t;" }, _dofinalize: function () shortcuts var data="this._data;" datawords="data.words;" nbitstotal="this._nDataBytes" * 8; nbitsleft="data.sigBytes" add padding datawords[nbitsleft>>> 5] |= 0x80 << (24 - nBitsLeft % 32);
             dataWords[(((nBitsLeft + 64) >>> 9) << 4) + 14] = (
                 (((nBitsTotal << 8)  | (nBitsTotal >>> 24)) & 0x00ff00ff) |
                 (((nBitsTotal << 24) | (nBitsTotal >>> 8))  & 0xff00ff00)
@@ -156,7 +156,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
     }
 
     function rotl(x,n) {
-        return (x<<n) |="" (x="">>>(32-n));
+        return (x<<n) | (x>>>(32-n));
     }
 
 
