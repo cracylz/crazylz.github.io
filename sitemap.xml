@@ -4,7 +4,7 @@
   <url>
     <loc>http://qssq666.cn/about/index.html</loc>
     
-    <lastmod>2019-05-26T06:09:17.445Z</lastmod>
+    <lastmod>2019-05-30T13:35:09.301Z</lastmod>
     
   </url>
   
@@ -345,13 +345,6 @@
   </url>
   
   <url>
-    <loc>http://qssq666.cn/live/chat_room.json</loc>
-    
-    <lastmod>2017-04-23T13:57:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://qssq666.cn/live/chat_group.json</loc>
     
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
@@ -360,6 +353,13 @@
   
   <url>
     <loc>http://qssq666.cn/live/chat_service.json</loc>
+    
+    <lastmod>2017-04-23T13:57:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://qssq666.cn/live/chat_room.json</loc>
     
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
     
@@ -401,14 +401,14 @@
   </url>
   
   <url>
-    <loc>http://qssq666.cn/utils/index.html</loc>
+    <loc>http://qssq666.cn/utils/index1.html</loc>
     
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://qssq666.cn/utils/index1.html</loc>
+    <loc>http://qssq666.cn/utils/index.html</loc>
     
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
     
