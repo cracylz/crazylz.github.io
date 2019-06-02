@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://qssq666.cn/update/index.html</loc>
+    
+    <lastmod>2019-06-02T12:36:56.507Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://qssq666.cn/about/index.html</loc>
     
     <lastmod>2019-05-30T13:35:09.301Z</lastmod>
@@ -117,13 +124,6 @@
     <loc>http://qssq666.cn/2018/12/01/20181211_share_alipay/</loc>
     
     <lastmod>2018-12-01T05:28:13.518Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://qssq666.cn/update/index.html</loc>
-    
-    <lastmod>2018-11-22T14:43:01.704Z</lastmod>
     
   </url>
   
@@ -338,7 +338,7 @@
   </url>
   
   <url>
-    <loc>http://qssq666.cn/bgsearch/index.html</loc>
+    <loc>http://qssq666.cn/other/history_qq.html</loc>
     
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
     
@@ -352,7 +352,7 @@
   </url>
   
   <url>
-    <loc>http://qssq666.cn/live/chat_service.json</loc>
+    <loc>http://qssq666.cn/messagebroad/index.html</loc>
     
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
     
@@ -366,6 +366,13 @@
   </url>
   
   <url>
+    <loc>http://qssq666.cn/bgsearch/index.html</loc>
+    
+    <lastmod>2017-04-23T13:57:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://qssq666.cn/live/share.html</loc>
     
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
@@ -373,14 +380,7 @@
   </url>
   
   <url>
-    <loc>http://qssq666.cn/messagebroad/index.html</loc>
-    
-    <lastmod>2017-04-23T13:57:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://qssq666.cn/other/history_qq.html</loc>
+    <loc>http://qssq666.cn/live/chat_service.json</loc>
     
     <lastmod>2017-04-23T13:57:08.000Z</lastmod>
     
